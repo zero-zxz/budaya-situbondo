@@ -1,0 +1,3331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Warisan Budaya Situbondo - Pusaka Cagar Budaya, Tradisi, & Sejarah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Inventarisasi Digital 17 Kecamatan, Seni Pandalungan, & Jejak Karesidenan Besuki">
+  
+  <!-- Font Tipografi Premium Warisan Budaya -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+  /* ============================================================
+     Sistem Desain Premium Warisan Budaya Situbondo
+     Bebas Emoji 100% | Full Vector SVG | Ramah Warga Situbondo
+     ============================================================ */
+  :root {
+    --color-primary: #8b3a1a;
+    --color-primary-dark: #6e2c13;
+    --color-primary-soft: #fcf4ee;
+    --color-accent-gold: #c27803;
+    --color-accent-amber: #d97706;
+    --color-gold-light: #fef3c7;
+    
+    --color-bg-dark: #120e0c;
+    --color-bg-body: #f8f6f0;
+    --color-surface: #ffffff;
+    --color-surface-soft: #f2eee6;
+    --color-border: #e2dcd2;
+    --color-border-subtle: #eae5dc;
+    --color-border-gold: rgba(194, 120, 3, 0.4);
+    
+    --color-text-main: #1c1917;
+    --color-text-muted: #57534e;
+    --color-text-subtle: #78716c;
+    --color-text-inverse: #fdfaf6;
+
+    --font-heading: 'Cinzel', 'Playfair Display', 'Georgia', serif;
+    --font-serif-sub: 'Playfair Display', 'Georgia', serif;
+    --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+    --shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.06);
+    --shadow-md: 0 4px 14px rgba(28, 25, 23, 0.08);
+    --shadow-lg: 0 12px 32px rgba(28, 25, 23, 0.12);
+    --shadow-xl: 0 20px 48px rgba(18, 14, 12, 0.22);
+    
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+    
+    --transition-fast: 0.15s ease;
+    --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SVG Base Styling */
+  .icon-svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+  .icon-svg-stroke {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+  }
+
+  /* Header & Navigasi */
+  .site-header {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .nav-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .brand-group {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .brand-logo-frame {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .brand-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  }
+
+  .brand-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+  }
+
+  .brand-sub {
+    font-size: 0.725rem;
+    color: var(--color-accent-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* Nav View Switcher */
+  .nav-view-switcher {
+    display: flex;
+    background: var(--color-surface-soft);
+    padding: 0.3rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    gap: 0.25rem;
+  }
+
+  .view-tab-btn {
+    appearance: none;
+    background: transparent;
+    border: none;
+    padding: 0.45rem 1.1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    transition: all var(--transition-fast);
+  }
+
+  .view-tab-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .view-tab-btn:hover {
+    color: var(--color-text-main);
+  }
+
+  .view-tab-btn.active {
+    background: var(--color-primary);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(139, 58, 26, 0.28);
+  }
+
+  /* Hero Section dengan Hero Image & Layer Sinematik */
+  .hero-section {
+    position: relative;
+    background-color: var(--color-bg-dark);
+    background-image: 
+      linear-gradient(180deg, rgba(18, 14, 12, 0.76) 0%, rgba(18, 14, 12, 0.88) 55%, rgba(18, 14, 12, 0.98) 100%),
+      radial-gradient(circle at 50% 30%, rgba(217, 119, 6, 0.24) 0%, transparent 65%),
+      url('data/foto/hero-petik-laut.jpg');
+    background-size: cover;
+    background-position: center 38%;
+    background-repeat: no-repeat;
+    color: var(--color-text-inverse);
+    padding: 4.5rem 1.5rem 3.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(226, 220, 210, 0.15);
+    overflow: hidden;
+  }
+
+  .hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-kicker-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(253, 230, 138, 0.35);
+    padding: 0.4rem 1.1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-gold-light);
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-kicker-badge svg {
+    width: 14px;
+    height: 14px;
+    color: var(--color-accent-gold);
+  }
+
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-title-accent {
+    background: linear-gradient(135deg, #fffbeb 0%, #fde68a 40%, #d97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .hero-desc {
+    color: #e8e3dc;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 820px;
+    margin: 0 auto 2rem;
+    font-family: var(--font-sans);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Panel Metrik Hero (4 Kolom) */
+  .hero-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.85rem;
+    max-width: 920px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .hero-metric-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-md);
+    padding: 0.85rem 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .hero-metric-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(253, 230, 138, 0.35);
+  }
+
+  .metric-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    background: rgba(217, 119, 6, 0.2);
+    border: 1px solid rgba(253, 230, 138, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fde68a;
+  }
+
+  .metric-icon-wrap svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .metric-num {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+  }
+
+  .metric-label {
+    font-size: 0.7rem;
+    color: #d1c8bd;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+
+  /* Console Interaktif Pencarian & Filter */
+  .controls-console {
+    max-width: 980px;
+    margin: 0 auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-dock-row {
+    display: flex;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .search-dock {
+    position: relative;
+    flex: 1;
+  }
+
+  .search-input-field {
+    width: 100%;
+    padding: 0.95rem 2.85rem 0.95rem 3rem;
+    font-size: 1rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-soft);
+    color: var(--color-text-main);
+    outline: none;
+    transition: all var(--transition-fast);
+  }
+
+  .search-input-field:focus {
+    background: #ffffff;
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 0 3.5px rgba(194, 120, 3, 0.18);
+  }
+
+  .search-icon-prefix {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-accent-gold);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-icon-prefix svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-clear-btn {
+    position: absolute;
+    right: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-border);
+    border: none;
+    border-radius: var(--radius-full);
+    width: 26px;
+    height: 26px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: background var(--transition-fast);
+  }
+
+  .search-clear-btn:hover {
+    background: #d5cec3;
+    color: var(--color-text-main);
+  }
+
+  .search-clear-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Dropdown Filter Kecamatan */
+  .kecamatan-select-wrap {
+    min-width: 240px;
+    position: relative;
+  }
+
+  .kecamatan-select {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background: var(--color-surface-soft);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0 2.25rem 0 1rem;
+    font-size: 0.925rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    cursor: pointer;
+    outline: none;
+    transition: border-color var(--transition-fast);
+  }
+
+  .kecamatan-select:focus {
+    border-color: var(--color-accent-gold);
+    background: #ffffff;
+  }
+
+  .kecamatan-select-arrow {
+    position: absolute;
+    right: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-text-subtle);
+  }
+
+  .kecamatan-select-arrow svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Filter Pil Kategori */
+  .category-nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .cat-tab-btn {
+    appearance: none;
+    background: var(--color-surface-soft);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all var(--transition-smooth);
+    user-select: none;
+  }
+
+  .cat-tab-btn svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-text-subtle);
+    transition: color var(--transition-smooth);
+  }
+
+  .cat-tab-btn:hover {
+    background: #eae5dc;
+    color: var(--color-text-main);
+    border-color: #d8d0c2;
+  }
+
+  .cat-tab-btn:hover svg {
+    color: var(--color-primary);
+  }
+
+  .cat-tab-btn.active {
+    background: linear-gradient(135deg, #8b3a1a 0%, #6e2c13 100%);
+    border-color: #8b3a1a;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgba(139, 58, 26, 0.32);
+  }
+
+  .cat-tab-btn.active svg {
+    color: #fde68a;
+  }
+
+  /* Main Container */
+  .main-content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .content-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .catalog-heading-wrap h2 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .catalog-heading-wrap h2 svg {
+    color: var(--color-primary);
+    width: 22px;
+    height: 22px;
+  }
+
+  .catalog-count-badge {
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+    font-weight: 500;
+  }
+
+  /* Grid Kartu Warisan */
+  .culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.75rem;
+  }
+
+  .culture-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+
+  .culture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: #d1c8bd;
+  }
+
+  .card-media-banner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #241c17;
+    overflow: hidden;
+  }
+
+  .card-media-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+  }
+
+  .culture-card:hover .card-media-img {
+    transform: scale(1.05);
+  }
+
+  .card-media-motif {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2b1f19 0%, #17120f 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .motif-svg-pattern {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.18;
+    color: #fde68a;
+  }
+
+  .motif-emblem-center {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: rgba(139, 58, 26, 0.45);
+    border: 1px solid rgba(253, 230, 138, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fde68a;
+  }
+
+  .motif-emblem-center svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card-media-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.65) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.85rem;
+    pointer-events: none;
+  }
+
+  .badge-category-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.725rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+  }
+
+  .badge-category-pill svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .cat-cagar-budaya {
+    background: rgba(139, 58, 26, 0.92);
+    color: #fffaf5;
+    border: 1px solid rgba(253, 230, 138, 0.4);
+  }
+
+  .cat-kesenian {
+    background: rgba(30, 64, 175, 0.9);
+    color: #eff6ff;
+    border: 1px solid rgba(191, 219, 254, 0.4);
+  }
+
+  .cat-tradisi {
+    background: rgba(22, 101, 52, 0.9);
+    color: #f0fdf4;
+    border: 1px solid rgba(187, 247, 208, 0.4);
+  }
+
+  .cat-sejarah {
+    background: rgba(180, 83, 9, 0.9);
+    color: #fffbeb;
+    border: 1px solid rgba(253, 230, 138, 0.4);
+  }
+
+  .badge-sorotan {
+    background: rgba(217, 119, 6, 0.95);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.55rem;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border: 1px solid #fef3c7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  .badge-sorotan svg {
+    width: 11px;
+    height: 11px;
+    fill: #ffffff;
+  }
+
+  .card-body {
+    padding: 1.35rem 1.35rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.45rem;
+    color: var(--color-text-main);
+  }
+
+  .card-location-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-size: 0.825rem;
+    color: var(--color-text-subtle);
+    margin-bottom: 0.75rem;
+  }
+
+  .card-location-row svg {
+    width: 14px;
+    height: 14px;
+    color: var(--color-primary);
+  }
+
+  .card-kecamatan-tag {
+    background: #fdf5ec;
+    border: 1px solid #f2dfce;
+    color: var(--color-primary);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+
+  .card-year-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .card-year-tag svg {
+    width: 13px;
+    height: 13px;
+    color: var(--color-accent-gold);
+  }
+
+  .card-snippet {
+    font-size: 0.885rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .card-footer {
+    padding: 0.85rem 1.35rem;
+    background: var(--color-surface-soft);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .card-type-label {
+    font-weight: 600;
+    color: var(--color-text-subtle);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .card-type-label svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .btn-card-action {
+    color: var(--color-primary);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.825rem;
+    transition: transform var(--transition-fast), color var(--transition-fast);
+  }
+
+  .btn-card-action svg {
+    width: 14px;
+    height: 14px;
+    transition: transform var(--transition-fast);
+  }
+
+  .culture-card:hover .btn-card-action {
+    color: var(--color-primary-dark);
+  }
+
+  .culture-card:hover .btn-card-action svg {
+    transform: translateX(3px);
+  }
+
+  /* Linimasa Sejarah */
+  .timeline-section {
+    display: none;
+  }
+
+  .timeline-section.active {
+    display: block;
+  }
+
+  .timeline-intro-box {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .timeline-intro-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main);
+  }
+
+  .timeline-intro-lead {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  .timeline-sources-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-surface-soft);
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    color: var(--color-text-subtle);
+    border: 1px solid var(--color-border);
+  }
+
+  .timeline-sources-pill svg {
+    width: 14px;
+    height: 14px;
+    color: var(--color-primary);
+  }
+
+  .timeline-tree {
+    position: relative;
+    padding: 1rem 0 2rem;
+  }
+
+  .timeline-tree::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 28px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-accent-gold) 100%);
+    border-radius: var(--radius-full);
+  }
+
+  .timeline-node-card {
+    position: relative;
+    margin-left: 70px;
+    margin-bottom: 2.75rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  }
+
+  .timeline-node-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -53px;
+    top: 24px;
+    width: 26px;
+    height: 26px;
+    border-radius: var(--radius-full);
+    background: var(--color-surface);
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(139, 58, 26, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timeline-dot-inner {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: var(--color-accent-gold);
+  }
+
+  .timeline-meta-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .timeline-era-chip {
+    background: #fdf3ee;
+    border: 1px solid #f4dcd0;
+    color: var(--color-primary);
+    font-size: 0.725rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .timeline-year-text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-accent-gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .timeline-year-text svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-node-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    line-height: 1.3;
+    margin-bottom: 0.65rem;
+  }
+
+  .timeline-node-lead {
+    font-size: 0.95rem;
+    color: var(--color-text-main);
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-node-body {
+    font-size: 0.925rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .timeline-footer-row {
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--color-text-subtle);
+  }
+
+  .timeline-src-text {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .timeline-src-text svg {
+    width: 14px;
+    height: 14px;
+    color: var(--color-primary);
+  }
+
+  /* Pandalungan & 17 Kecamatan */
+  .pandalungan-section {
+    display: none;
+  }
+
+  .pandalungan-section.active {
+    display: block;
+  }
+
+  .pandalungan-banner {
+    background: linear-gradient(135deg, #2b1f19 0%, #15110e 100%);
+    color: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: 3rem 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(253, 230, 138, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pandalungan-banner-title {
+    font-family: var(--font-heading);
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .pandalungan-banner-title span {
+    color: #fde68a;
+  }
+
+  .pandalungan-banner-desc {
+    color: #e5ded6;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 840px;
+    margin-bottom: 1.5rem;
+  }
+
+  .kecamatan-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .kecamatan-info-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .kecamatan-info-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .kecamatan-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .kecamatan-card-name {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+  }
+
+  .kecamatan-card-count {
+    background: #fdf3ee;
+    color: var(--color-primary);
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .kecamatan-card-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  /* Empty State */
+  .empty-search-state {
+    text-align: center;
+    padding: 4.5rem 1.5rem;
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+    grid-column: 1 / -1;
+  }
+
+  .empty-icon-wrap {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.25rem;
+    border-radius: var(--radius-full);
+    background: var(--color-surface-soft);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-gold);
+  }
+
+  .empty-icon-wrap svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .empty-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-main);
+  }
+
+  .empty-desc {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .btn-reset-search {
+    background: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(139, 58, 26, 0.3);
+    transition: background var(--transition-fast);
+  }
+
+  .btn-reset-search svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .btn-reset-search:hover {
+    background: var(--color-primary-dark);
+  }
+
+  /* Modal Detail */
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(18, 14, 12, 0.72);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 1.25rem;
+  }
+
+  .modal-backdrop.open {
+    display: flex;
+  }
+
+  .modal-dialog {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 680px;
+    max-height: 92vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--color-border);
+    animation: modalSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+
+  @keyframes modalSlideIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .modal-banner-area {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: #241c17;
+    overflow: hidden;
+  }
+
+  .modal-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(18, 14, 12, 0.8) 100%);
+  }
+
+  .modal-dismiss-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 5;
+    transition: background var(--transition-fast);
+  }
+
+  .modal-dismiss-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-dismiss-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .modal-content-body {
+    padding: 1.75rem 2rem 2.25rem;
+  }
+
+  .modal-meta-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-title-text {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    color: var(--color-text-main);
+  }
+
+  .modal-section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .modal-section-title svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .modal-narrative-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 1.75rem;
+  }
+
+  .modal-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.75rem;
+    font-size: 0.885rem;
+    background: var(--color-surface-soft);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  .modal-data-table tr {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .modal-data-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .modal-data-table td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+  }
+
+  .modal-data-table td:first-child {
+    font-weight: 600;
+    color: var(--color-text-muted);
+    width: 36%;
+    background: rgba(226, 220, 210, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .modal-data-table td:first-child svg {
+    width: 14px;
+    height: 14px;
+    color: var(--color-primary);
+  }
+
+  .modal-data-table td:last-child {
+    color: var(--color-text-main);
+  }
+
+  .modal-actions-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+
+  .btn-modal-copy {
+    background: var(--color-surface-soft);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-main);
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    transition: all var(--transition-fast);
+  }
+
+  .btn-modal-copy svg {
+    width: 15px;
+    height: 15px;
+    color: var(--color-primary);
+  }
+
+  .btn-modal-copy:hover {
+    background: #eae5dc;
+    border-color: #d1c8bd;
+  }
+
+  /* Toast Notification */
+  .toast-pill {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    background: #1c1917;
+    color: #fdfaf6;
+    padding: 0.65rem 1.4rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    z-index: 200;
+    border: 1px solid rgba(253, 230, 138, 0.3);
+  }
+
+  .toast-pill.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  .toast-pill svg {
+    width: 16px;
+    height: 16px;
+    color: #4ade80;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: #120e0c;
+    color: #c4bcb2;
+    border-top: 1px solid rgba(226, 220, 210, 0.15);
+    padding: 3.5rem 1.5rem 2.5rem;
+    margin-top: auto;
+  }
+
+  .footer-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .footer-colophon {
+    color: #8c857b;
+    font-size: 0.8rem;
+  }
+
+  /* Responsive Rules */
+  @media (max-width: 860px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .hero-title {
+      font-size: 2.15rem;
+    }
+    .hero-metrics-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.65rem;
+    }
+    .search-dock-row {
+      flex-direction: column;
+    }
+    .kecamatan-select-wrap {
+      width: 100%;
+    }
+    .culture-grid {
+      grid-template-columns: 1fr;
+    }
+    .timeline-tree::before {
+      left: 18px;
+    }
+    .timeline-node-card {
+      margin-left: 50px;
+      padding: 1.25rem;
+    }
+    .timeline-dot {
+      left: -40px;
+      width: 22px;
+      height: 22px;
+    }
+    .content-header-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-group" onclick="switchView('katalog'); return false;">
+        <!-- Logo Resmi Kabupaten Situbondo -->
+        <div class="brand-logo-frame">
+          <img src="data/foto/logo-situbondo.png" class="brand-logo-img" alt="Logo Kabupaten Situbondo" />
+        </div>
+        <div>
+          <div class="brand-title">Warisan Budaya Situbondo</div>
+          <div class="brand-sub">Bumi Sholawat Nariyah &bull; Kota Santri Pancasila</div>
+        </div>
+      </a>
+
+      <!-- Menu Pilihan Tampilan Utama -->
+      <nav class="nav-view-switcher" role="tablist" aria-label="Menu Navigasi">
+        <button class="view-tab-btn active" data-view="katalog" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+          </svg>
+          <span>Katalog Warisan</span>
+        </button>
+
+        <button class="view-tab-btn" data-view="sejarah" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5" cy="5" r="2.5"/>
+            <circle cx="15" cy="10" r="2.5"/>
+            <circle cx="5" cy="15" r="2.5"/>
+            <path d="M5 7.5v5M7.5 5h3.5l4 2.5M7.5 15h3.5l4-2.5"/>
+          </svg>
+          <span>Linimasa Sejarah</span>
+        </button>
+
+        <button class="view-tab-btn" data-view="pandalungan" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+          </svg>
+          <span>Jelajahi 17 Kecamatan</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section yang Ramah & Menghargai Warga Situbondo -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-kicker-badge">
+        <svg viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0L9.8 6.2L16 8L9.8 9.8L8 16L6.2 9.8L0 8L6.2 6.2L8 0Z"/>
+        </svg>
+        <span>Salam Dhulur Situbondo</span>
+      </div>
+
+      <h1 class="hero-title">
+        Warisan Luhur & Cerita Sejarah <span class="hero-title-accent">Bumi Situbondo</span>
+      </h1>
+
+      <p class="hero-desc">
+        Mulai dari ujung barat Besuki sampai ujung timur Banyuputih, mari bersama kita kenali, jaga, dan rawat
+        cagar budaya, kesenian khas, adat tradisi, serta sejarah perjuangan para pahlawan dan leluhur di 17 kecamatan tercinta kita.
+      </p>
+
+      <!-- Panel Ringkasan Metrik (4 Kolom) -->
+      <div class="hero-metrics-grid">
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatTotal">43</div>
+            <div class="metric-label">Objek Terdata</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatCagar">21</div>
+            <div class="metric-label">Cagar Budaya</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatSeni">16</div>
+            <div class="metric-label">Seni & Tradisi</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('pandalungan')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatKecamatan">17</div>
+            <div class="metric-label">Kecamatan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konsol Pencarian & Filter Navigasi Kategori -->
+      <div class="controls-console">
+        <div class="search-dock-row">
+          <div class="search-dock">
+            <span class="search-icon-prefix">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="9" r="6"/>
+                <path d="M13.5 13.5L18 18"/>
+              </svg>
+            </span>
+            <input 
+              type="search" 
+              id="searchInput" 
+              class="search-input-field" 
+              placeholder="Cari nama warisan, desa, tarian, atau kata kunci..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button class="search-clear-btn" id="searchClearBtn" type="button" aria-label="Bersihkan pencarian">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="15" y1="5" x2="5" y2="15"/>
+                <line x1="5" y1="5" x2="15" y2="15"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Dropdown Kecamatan Situbondo -->
+          <div class="kecamatan-select-wrap">
+            <select id="kecamatanSelect" class="kecamatan-select" aria-label="Pilih Kecamatan di Situbondo">
+              <option value="Semua">Semua Kecamatan (17 Wilayah)</option>
+            </select>
+            <div class="kecamatan-select-arrow">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6l4 4 4-4"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-nav-tabs" role="tablist" aria-label="Pilihan Kategori Warisan">
+          <button class="cat-tab-btn active" data-category="Semua" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            </svg>
+            <span>Semua Kategori</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Cagar Budaya" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/>
+            </svg>
+            <span>Cagar Budaya</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Kesenian" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/>
+            </svg>
+            <span>Kesenian</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Tradisi" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 2.5c2 2.5 4 4.5 4 7a4 4 0 01-8 0c0-2.5 2-4.5 4-7zM7 14.5l-2 3M13 14.5l2 3M10 14.5v3"/>
+            </svg>
+            <span>Tradisi & Adat</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Sejarah" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 3.5h8a2.5 2.5 0 012.5 2.5v9a2.5 2.5 0 01-2.5 2.5H5a2 2 0 01-2-2V5.5A2 2 0 015 3.5h1zM6 7.5h8M6 11.5h5"/>
+            </svg>
+            <span>Sejarah & Kriya</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konten Dinamis -->
+  <main class="main-content">
+
+    <!-- VIEW 1: KATALOG WARISAN BUDAYA -->
+    <div id="katalogView">
+      <div class="content-header-row">
+        <div class="catalog-heading-wrap">
+          <h2>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            Daftar Warisan Budaya di 17 Kecamatan
+          </h2>
+        </div>
+        <div class="catalog-count-badge" id="resultCount">Menghimpun data warisan...</div>
+      </div>
+
+      <!-- Grid Kartu Budaya -->
+      <div class="culture-grid" id="cultureGrid"></div>
+
+      <!-- State Kosong -->
+      <div class="empty-search-state" id="emptySearchState" style="display: none;">
+        <div class="empty-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+        <h3 class="empty-title">Belum ada data warisan yang sesuai</h3>
+        <p class="empty-desc">
+          Coba cari nama desa lain atau kembalikan pilihan ke semua kecamatan dan semua kategori.
+        </p>
+        <button class="btn-reset-search" onclick="resetFilters()" type="button">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 8a5.5 5.5 0 101.6-3.9L2 6M2 2v4h4"/>
+          </svg>
+          <span>Kembalikan Semua Pilihan</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 2: LINIMASA SEJARAH SITUBONDO -->
+    <div id="timelineView" class="timeline-section">
+      <div class="timeline-intro-box">
+        <h2 class="timeline-intro-title">Kronik Sejarah Kabupaten Situbondo</h2>
+        <p class="timeline-intro-lead">
+          Rekonstruksi kronologis perjalanan peradaban Situbondo yang disusun berdasarkan naskah kuno nusantara,
+          arsip kolonial Hindia Belanda (Karesidenan Besuki), arsip nasional Republik Indonesia, hingga regulasi resmi penetapan daerah.
+        </p>
+        <div class="timeline-sources-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/>
+          </svg>
+          <span>Disusun dari: Kitab Nagarakretagama, Suma Oriental Tomé Pires, Babad Besuki, Regeeringsalmanak, & Lembaran Negara PP 28/1972</span>
+        </div>
+      </div>
+
+      <div class="timeline-tree" id="timelineTreeContainer"></div>
+    </div>
+
+    <!-- VIEW 3: KILAS PANDALUNGAN & 17 KECAMATAN -->
+    <div id="pandalunganView" class="pandalungan-section">
+      <div class="pandalungan-banner">
+        <h2 class="pandalungan-banner-title">Guyub Rukun Budaya <span>Pandalungan</span> Situbondo</h2>
+        <p class="pandalungan-banner-desc">
+          Masyarakat Situbondo hidup berdampingan secara harmonis dalam kebudayaan <strong>Pandalungan</strong>:
+          asimilasi kultural yang hangat antara tradisi Madura dan pesisir Jawa. Berpadu erat dengan nilai religius pondok pesantren
+          yang melahirkan julukan kebanggaan <strong>Kota Santri Pancasila</strong> dan <strong>Bumi Sholawat Nariyah</strong>.
+        </p>
+      </div>
+
+      <div class="content-header-row">
+        <div class="catalog-heading-wrap">
+          <h2>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+            </svg>
+            Jelajahi Warisan di 17 Kecamatan Situbondo
+          </h2>
+        </div>
+      </div>
+
+      <div class="kecamatan-grid-cards" id="kecamatanGridCards"></div>
+    </div>
+
+  </main>
+
+  <!-- Modal Detail Komprehensif -->
+  <div class="modal-backdrop" id="detailModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-banner-area">
+        <img class="modal-banner-img" id="modalBannerImg" src="" alt="Foto Warisan" style="display: none;" />
+        <div class="card-media-motif" id="modalBannerMotif" style="display: none;">
+          <svg class="motif-svg-pattern" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs>
+              <pattern id="modalHeritageBatik" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                <path d="M0 10 Q5 5 10 0 Q15 5 20 10 Q15 15 10 20 Q5 15 0 10 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+                <circle cx="10" cy="10" r="1" fill="currentColor"/>
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#modalHeritageBatik)"/>
+          </svg>
+          <div class="motif-emblem-center">
+            <svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/></svg>
+          </div>
+        </div>
+        <div class="modal-banner-overlay"></div>
+        <button class="modal-dismiss-btn" id="modalCloseBtn" type="button" aria-label="Tutup jendela rincian">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="15" y1="5" x2="5" y2="15"/>
+            <line x1="5" y1="5" x2="15" y2="15"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-content-body">
+        <div class="modal-meta-top">
+          <span class="badge-category-pill cat-cagar-budaya" id="modalCategoryBadge">-</span>
+          <div id="modalSorotanWrap"></div>
+        </div>
+
+        <h2 class="modal-title-text" id="modalTitle">Detail Warisan Budaya</h2>
+
+        <div class="modal-section-title">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h12a1 1 0 011 1v8a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1zM4 6h8M4 9h5"/>
+          </svg>
+          <span>Uraian & Riwayat</span>
+        </div>
+        <p class="modal-narrative-text" id="modalNarrative">-</p>
+
+        <table class="modal-data-table">
+          <tbody>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.76-2.24-5-5-5z"/>
+                  <circle cx="8" cy="6.5" r="1.75"/>
+                </svg>
+                <span>Lokasi & Kecamatan</span>
+              </td>
+              <td id="modalValLocation">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1.5 8.5L7.5 2.5H13.5V8.5L7.5 14.5L1.5 8.5Z"/>
+                  <circle cx="10" cy="5" r="1"/>
+                </svg>
+                <span>Klasifikasi</span>
+              </td>
+              <td id="modalValType">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="12" height="11" rx="2"/>
+                  <path d="M2 6.5h12M5 1.5v3M11 1.5v3"/>
+                </svg>
+                <span>Tahun / Periode</span>
+              </td>
+              <td id="modalValYear">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 1.5l5 2.25v4.25c0 3.5-2.5 6-5 6.75-2.5-.75-5-3.25-5-6.75V3.75L8 1.5z"/>
+                  <path d="M6 7.5l1.5 1.5 3-3"/>
+                </svg>
+                <span>Status Inventaris</span>
+              </td>
+              <td id="modalValStatus">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/>
+                  <path d="M5 6.5h6M5 9.5h4"/>
+                </svg>
+                <span>Sumber Data</span>
+              </td>
+              <td id="modalValSource">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="8" r="6.5"/>
+                  <path d="M8 7.5v4M8 4.75v.5"/>
+                </svg>
+                <span>Info Tambahan</span>
+              </td>
+              <td id="modalValExtra">-</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="modal-actions-bar">
+          <button class="btn-modal-copy" id="btnCopyModal" type="button">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/>
+              <path d="M3.5 10.5h-1a1 1 0 01-1-1v-6a1 1 0 011-1h6a1 1 0 011 1v1"/>
+            </svg>
+            <span>Salin Ringkasan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notifikasi Toast -->
+  <div class="toast-pill" id="toastPill" role="status" aria-live="polite">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 8.5l3.5 3.5 6.5-7.5"/>
+    </svg>
+    <span id="toastMsg">Informasi warisan budaya berhasil disalin</span>
+  </div>
+
+  <!-- Footer dengan Logo Kabupaten Situbondo -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-logo-frame" style="width: 38px; height: 38px;">
+          <img src="data/foto/logo-situbondo.png" class="brand-logo-img" alt="Logo Kabupaten Situbondo" />
+        </div>
+        <div>
+          <div style="font-weight: 700; color: #ffffff;">Pemerintah Kabupaten Situbondo</div>
+          <div class="footer-colophon">Platform Terbuka Inventarisasi Sejarah & Kebudayaan 17 Kecamatan</div>
+        </div>
+      </div>
+
+      <div class="footer-colophon">
+        Bebas Lisensi &copy; 2026. Didukung oleh Google Apps Script & Google Sheets.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Server-Side Data Injection -->
+  <script>
+    window.INITIAL_DATA = [
+  {
+    "id": "batu-silindris-banyuglugur",
+    "nama": "Batu Silindris Banyuglugur",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Megalitik",
+    "lokasi": "Desa Banyuglugur",
+    "kecamatan": "Banyuglugur",
+    "tahun": "Zaman Prasejarah",
+    "unggulan": false,
+    "deskripsi": "Tinggalan batu silindris purbakala berbahan andesit alami yang ditemukan di wilayah pesisir barat Situbondo, menjadi bukti aktivitas manusia megalitikum di pintu masuk barat kabupaten.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/185/431.013/2024)",
+    "sumber": "Naskah Kajian TACB Kabupaten Situbondo",
+    "detail_tambahan": "SK Bupati 2024 | Bahan: Andesit Purbakala",
+    "foto": "batu-silindris-banyuglugur.jpg",
+    "foto_url": "data/foto/batu-silindris-banyuglugur.jpg"
+  },
+  {
+    "id": "mangrove-dubibir-banyuglugur",
+    "nama": "Kawasan Mangrove Pantai Dubibir",
+    "kategori": "Tradisi",
+    "jenis": "Tradisi & Lingkungan Pesisir",
+    "lokasi": "Pantai Dubibir, Desa Banyuglugur",
+    "kecamatan": "Banyuglugur",
+    "tahun": "Turun-temurun",
+    "unggulan": true,
+    "deskripsi": "Kawasan konservasi mangrove dan tradisi penjagaan sempadan pantai oleh warga pesisir Banyuglugur untuk menahan abrasi gelombang Selat Madura dan melestarikan habitat biota laut.",
+    "status": "Kawasan Konservasi & Tradisi Pesisir",
+    "sumber": "Dokumentasi Komunitas Peduli Pesisir Situbondo",
+    "detail_tambahan": "Fungsi: Penahan Abrasi & Perlindungan Habitat Bahari",
+    "foto": "pita-mangrove.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mangrove_Pantai_Dubibir_Situbondo.jpg/800px-Mangrove_Pantai_Dubibir_Situbondo.jpg"
+  },
+  {
+    "id": "pantai-utama-raya-banyuglugur",
+    "nama": "Pantai Utama Raya Banyuglugur",
+    "kategori": "Sejarah",
+    "jenis": "Geografi Bersejarah Pesisir",
+    "lokasi": "Desa Banyuglugur",
+    "kecamatan": "Banyuglugur",
+    "tahun": "Kontemporer",
+    "unggulan": false,
+    "deskripsi": "Pesisir pantai utara di gerbang barat Situbondo yang berbatasan langsung dengan Probolinggo, menjadi simpul persinggahan jalur Daendels dan rest area bahari terpadu.",
+    "status": "Kawasan Bahari Gerbang Barat",
+    "sumber": "Dinas Pariwisata Situbondo",
+    "detail_tambahan": "Lokasi: Jalur Pantura Gerbang Barat",
+    "foto": "pita-utama-raya.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Pantai_Utama_Raya_Situbondo.jpg/800px-Pantai_Utama_Raya_Situbondo.jpg"
+  },
+  {
+    "id": "gelang-renteng-jatibanteng",
+    "nama": "Gelang Renteng Jatibanteng",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Logam Megalitik",
+    "lokasi": "Kawasan Perbukitan Jatibanteng",
+    "kecamatan": "Jatibanteng",
+    "tahun": "Era Perunggu - Besi",
+    "unggulan": false,
+    "deskripsi": "Rangkaian perhiasan gelang logam perunggu purbakala yang ditemukan dalam bekal kubur batu di wilayah Jatibanteng, membuktikan tingginya keahlian metalurgi masyarakat kuno.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/317/P/001.3/2023)",
+    "sumber": "Naskah Kajian TACB Kabupaten Situbondo",
+    "detail_tambahan": "Bahan: Perunggu Purbakala | SK Bupati 2023",
+    "foto": "gelang-renteng-jatibanteng.jpg",
+    "foto_url": "data/foto/gelang-renteng-jatibanteng.jpg"
+  },
+  {
+    "id": "selamatan-bumi-baritan",
+    "nama": "Ritus Baritan & Selamatan Desa",
+    "kategori": "Tradisi",
+    "jenis": "Ritus Tolak Bala Agraris",
+    "lokasi": "Desa-desa di Jatibanteng",
+    "kecamatan": "Jatibanteng",
+    "tahun": "Turun-temurun",
+    "unggulan": false,
+    "deskripsi": "Tradisi selamatan tolak bala di perempatan jalan desa atau sumber air dengan membawa takir daun pisang berisi nasi tumpeng mini untuk dinikmati bersama oleh warga tani.",
+    "status": "Tercatat Tradisi Agraris Kerakyatan",
+    "sumber": "Himpunan Kebudayaan Desa Situbondo",
+    "detail_tambahan": "Makna: Kerukunan dan Syukur Musim Tanam",
+    "foto": "baritan-jatibanteng.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hasil_bumi_untuk_di_sedekah_kan.jpg/800px-Hasil_bumi_untuk_di_sedekah_kan.jpg"
+  },
+  {
+    "id": "rumah-residen-besuki",
+    "nama": "Rumah Dinas Residen Besuki",
+    "kategori": "Cagar Budaya",
+    "jenis": "Bangunan Kolonial",
+    "lokasi": "Jl. Madura, Desa Besuki",
+    "kecamatan": "Besuki",
+    "tahun": "Abad ke-19",
+    "unggulan": true,
+    "deskripsi": "Pusat kediaman dan kantor administrasi pejabat tertinggi Residen Besuki semasa Hindia Belanda. Arsitektur bergaya Indische Empire dengan pilar-pilar kokoh yang menjadi saksi pusat pemerintahan kawasan timur Jawa Timur.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/392/P/004.2/2020)",
+    "sumber": "Naskah Kajian TACB Situbondo & Register Dapobud",
+    "detail_tambahan": "Gaya Arsitektur: Indische Empire Style",
+    "foto": "pendopo-besuki.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Pendopo_Pate_Alos_Besuki_Situbondo.jpg/800px-Pendopo_Pate_Alos_Besuki_Situbondo.jpg"
+  },
+  {
+    "id": "kantor-kawedanan-besuki",
+    "nama": "Kantor Kawedanan Besuki",
+    "kategori": "Cagar Budaya",
+    "jenis": "Bangunan Pemerintahan",
+    "lokasi": "Desa Besuki",
+    "kecamatan": "Besuki",
+    "tahun": "Abad ke-19",
+    "unggulan": false,
+    "deskripsi": "Gedung administrasi pembantu bupati wilayah Besuki pada masa lampau, memiliki beranda depan luas dan ventilasi lengkung khas bangunan tropis kolonial.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/392/P/004.2/2020)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "SK Bupati 2020 | Bangunan Bersejarah",
+    "foto": "kawedanan-besuki.jpg",
+    "foto_url": "data/foto/kawedanan-besuki.jpg"
+  },
+  {
+    "id": "klenteng-poo-tong-bio",
+    "nama": "Klenteng Poo Tong Bio Besuki",
+    "kategori": "Cagar Budaya",
+    "jenis": "Tempat Peribadatan Kuno",
+    "lokasi": "Pecinan Besuki",
+    "kecamatan": "Besuki",
+    "tahun": "Abad ke-18",
+    "unggulan": true,
+    "deskripsi": "Klenteng tertua di wilayah Besuki yang didirikan komunitas pedagang Tionghoa pesisir. Memiliki ornamen ukiran naga, altar klasik, serta papan pembakar dupa kuno lambang kerukunan antarwarga.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/443/P/004.2/2021)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "SK Bupati 2021 | Simbol Multikultural Besuki",
+    "foto": "klenteng-poo-tong-bio.jpg",
+    "foto_url": "data/foto/klenteng-poo-tong-bio.jpg"
+  },
+  {
+    "id": "ngalos-pate-alos",
+    "nama": "Tradisi Ziarah Pasarean Kyai Pate Alos",
+    "kategori": "Tradisi",
+    "jenis": "Ritus Ziarah Leluhur",
+    "lokasi": "Makam Pate Alos, Besuki",
+    "kecamatan": "Besuki",
+    "tahun": "Ritus Tahunan",
+    "unggulan": false,
+    "deskripsi": "Tradisi berziarah ke makam pendiri Besuki dan bupati terdahulu (Raden Bagus Kasim / Kyai Pate Alos) setiap menjelang Hari Jadi Kabupaten dan bulan Ruwah.",
+    "status": "Tradisi Religi Masyarakat Besuki",
+    "sumber": "Dinas Pendidikan dan Kebudayaan Situbondo",
+    "detail_tambahan": "Tokoh: Raden Bagus Kasim (Kyai Pate Alos)",
+    "foto": "pasarean-pate-alos.jpg",
+    "foto_url": "data/foto/pasarean-pate-alos.jpg"
+  },
+  {
+    "id": "situs-cemara",
+    "nama": "Situs Sarkofagus Cemara",
+    "kategori": "Cagar Budaya",
+    "jenis": "Situs Megalitik",
+    "lokasi": "Desa Cemara",
+    "kecamatan": "Suboh",
+    "tahun": "± 1500 SM",
+    "unggulan": true,
+    "deskripsi": "Sarkofagus batu monolitik berukuran panjang 220 cm, lebar 120 cm, dan tebal 50 cm. Berfungsi sebagai peti kubur batu penghormatan pemimpin suku prasejarah di perbukitan Suboh.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/185/431.013/2024)",
+    "sumber": "TACB Situbondo & BPK Wilayah XI",
+    "detail_tambahan": "Dimensi: 220 x 120 x 50 cm | Batu Andesit",
+    "foto": "situs-cemara-suboh.jpg",
+    "foto_url": "data/foto/situs-cemara-suboh.jpg"
+  },
+  {
+    "id": "tari-glipang-suboh",
+    "nama": "Seni Tari Glipang Suboh",
+    "kategori": "Kesenian",
+    "jenis": "Seni Tari Rakyat",
+    "lokasi": "Kecamatan Suboh",
+    "kecamatan": "Suboh",
+    "tahun": "Tradisi Lisan",
+    "unggulan": false,
+    "deskripsi": "Kesenian tari keprajuritan rakyat berakar tradisi Pandalungan dengan gerak rancak gagah, hentakan kaki berirama kendang, dan syair pujian moral.",
+    "status": "Tercatat Kesenian Tradisional Suboh",
+    "sumber": "Paguyuban Seni Pandalungan Situbondo",
+    "detail_tambahan": "Karakter: Tari Keprajuritan Rakyat",
+    "foto": "tari-glipang-suboh.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Topeng_Dalang_-_Sumenep.jpg/800px-Topeng_Dalang_-_Sumenep.jpg"
+  },
+  {
+    "id": "menara-pandang-mlandingan",
+    "nama": "Fondasi Menara Pandang Mlandingan",
+    "kategori": "Cagar Budaya",
+    "jenis": "Struktur Pengawasan Laut",
+    "lokasi": "Pesisir Mlandingan",
+    "kecamatan": "Mlandingan",
+    "tahun": "Abad ke-19",
+    "unggulan": false,
+    "deskripsi": "Struktur batu bata dan andesit fondasi menara pantau mercusuar masa Hindia Belanda untuk memandu perahu nelayan dan kapal niaga di Selat Madura.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/443/P/004.2/2021)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "SK Bupati 2021 | Lokasi Pesisir Mlandingan",
+    "foto": "menara-lonceng-kuno.jpg",
+    "foto_url": "data/foto/menara-lonceng-kuno.jpg"
+  },
+  {
+    "id": "petik-laut-mlandingan",
+    "nama": "Tradisi Selamatan Laut Mlandingan",
+    "kategori": "Tradisi",
+    "jenis": "Ritus Bahari Nelayan",
+    "lokasi": "Desa Selomukti, Mlandingan",
+    "kecamatan": "Mlandingan",
+    "tahun": "Turun-temurun",
+    "unggulan": false,
+    "deskripsi": "Upacara tahunan doa bersama dan larung tumpeng hasil bumi oleh warga nelayan Mlandingan sebagai ungkapan syukur atas keselamatan melaut.",
+    "status": "Tradisi Bahari Pesisir",
+    "sumber": "Rukun Nelayan Mlandingan",
+    "detail_tambahan": "Peserta: Warga Nelayan Selat Madura",
+    "foto": "petik-laut-mlandingan.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Petik_Laut_Pantai_Darmo_Probolinggo.jpg/730px-Petik_Laut_Pantai_Darmo_Probolinggo.jpg"
+  },
+  {
+    "id": "struktur-mellek-sumbermalang",
+    "nama": "Struktur Batur & Pagar Mellek",
+    "kategori": "Cagar Budaya",
+    "jenis": "Struktur Punden Purbakala",
+    "lokasi": "Desa Sumbermalang, Lereng Argopuro",
+    "kecamatan": "Sumbermalang",
+    "tahun": "Zaman Klasik Purbakala",
+    "unggulan": false,
+    "deskripsi": "Susunan batu berundak purbakala di ketinggian lereng Gunung Argopuro yang dahulu digunakan sebagai tempat pemujaan dan pertapaan resi masa lampau.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/185/431.013/2024)",
+    "sumber": "TACB Situbondo",
+    "detail_tambahan": "SK Bupati 2024 | Kawasan Pegunungan Argopuro",
+    "foto": "struktur-mellek.jpg",
+    "foto_url": "data/foto/struktur-mellek.jpg"
+  },
+  {
+    "id": "kethek-ogleng-situbondo",
+    "nama": "Kesenian Kethek Ogleng Sumbermalang",
+    "kategori": "Kesenian",
+    "jenis": "Seni Tari Rakyat",
+    "lokasi": "Kecamatan Sumbermalang",
+    "kecamatan": "Sumbermalang",
+    "tahun": "Tradisi Lisan",
+    "unggulan": false,
+    "deskripsi": "Seni pertunjukan tari rakyat dengan penari bertopeng monyet putih lincah yang menirukan gerakan kera hutan lereng Argopuro, diiringi gamelan rancak dan humor kerakyatan.",
+    "status": "Tercatat Kesenian Rakyat Tradisional",
+    "sumber": "Paguyuban Seniman Situbondo",
+    "detail_tambahan": "Unsur Seni: Akrobatik, Tari Topeng, Teater Rakyat",
+    "foto": "kethek-ogleng.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kethek_Ogleng_Kesenian_berasal_dari_Sampung_Ponorogo_a.jpg/676px-Kethek_Ogleng_Kesenian_berasal_dari_Sampung_Ponorogo_a.jpg"
+  },
+  {
+    "id": "sarkofagus-bungatan",
+    "nama": "Kompleks 26 Sarkofagus Selowogo",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Purbakala",
+    "lokasi": "Desa Selowogo",
+    "kecamatan": "Bungatan",
+    "tahun": "Zaman Megalithikum",
+    "unggulan": true,
+    "deskripsi": "Klaster makam batu megalitik terbanyak di Jawa Timur yang tersebar di perkebunan warga Bungatan. Terdiri atas lebih dari 26 unit sarkofagus dengan pahatan purba.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/443/P/004.2/2021)",
+    "sumber": "Daftar 26 Objek Sarkofagus SK Bupati 2021",
+    "detail_tambahan": "Terdiri dari Sarkofagus 1 s.d. 26",
+    "foto": "sarkofagus-selowogo.jpg",
+    "foto_url": "data/foto/sarkofagus-selowogo.jpg"
+  },
+  {
+    "id": "batik-situbondo",
+    "nama": "Batik Khas Pesisir Motif Kerang",
+    "kategori": "Sejarah",
+    "jenis": "Kriya Tekstil Tradisi",
+    "lokasi": "Sentra Selowogo",
+    "kecamatan": "Bungatan",
+    "tahun": "1994",
+    "unggulan": true,
+    "deskripsi": "Kain batik khas Situbondo yang terinspirasi oleh kekayaan laut utara Jawa. Memiliki ragam hias khas biota bahari seperti kerang mahkota, karang rengganis, dan daun tembakau.",
+    "status": "Warisan Kriya Khas Kabupaten Situbondo",
+    "sumber": "Asosiasi Pengrajin Batik Situbondo",
+    "detail_tambahan": "Ciri Khas: Motif Kerang & Biota Bahari",
+    "foto": "batik-situbondo-kerang.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Batik_Madura_16.jpg/800px-Batik_Madura_16.jpg"
+  },
+  {
+    "id": "pantai-pasir-putih-bungatan",
+    "nama": "Pantai Pasir Putih Situbondo",
+    "kategori": "Tradisi",
+    "jenis": "Kawasan Tradisi Bahari",
+    "lokasi": "Desa Pasir Putih",
+    "kecamatan": "Bungatan",
+    "tahun": "Turun-temurun",
+    "unggulan": true,
+    "deskripsi": "Ikon bahari kebanggaan masyarakat Situbondo berbentuk teluk melengkung yang tenang. Menjadi lokasi tradisi lomba perahu layar tradisional dan pesta petik laut tahunan.",
+    "status": "Ikon Bahari Kebanggaan Situbondo",
+    "sumber": "Dinas Pariwisata Situbondo",
+    "detail_tambahan": "Pusat Parade Perahu Layar Tradisional",
+    "foto": "hero-pasir-putih.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Perahu_Layar_di_Pantai_Pasir_Putih_Situbondo.jpg/800px-Perahu_Layar_di_Pantai_Pasir_Putih_Situbondo.jpg"
+  },
+  {
+    "id": "kesenian-ojhung",
+    "nama": "Atraksi Adat Ojhung Bugeman",
+    "kategori": "Kesenian",
+    "jenis": "Seni Bela Diri Tradisi",
+    "lokasi": "Desa Bugeman",
+    "kecamatan": "Kendit",
+    "tahun": "Turun-temurun",
+    "unggulan": true,
+    "deskripsi": "Tradisi adu ketangkasan rotan antara dua pendekar bertelanjang dada dengan pelindung kepala dari sabut kelapa. Digelar saat selamatan desa memohon hujan dan tolak bala.",
+    "status": "Warisan Budaya Takbenda (WBTb) Daerah",
+    "sumber": "Dinas Pariwisata dan Kebudayaan Situbondo",
+    "detail_tambahan": "Lokasi Sakral: Desa Bugeman, Kendit",
+    "foto": "kesenian-ojhung.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kesenian_Ojung.jpg/800px-Kesenian_Ojung.jpg"
+  },
+  {
+    "id": "kampung-kerapu-kendit",
+    "nama": "Kawasan Pesisir Kampung Kerapu",
+    "kategori": "Tradisi",
+    "jenis": "Tradisi Nelayan Budidaya",
+    "lokasi": "Dusun Gundil, Desa Klatakan",
+    "kecamatan": "Kendit",
+    "tahun": "Turun-temurun",
+    "unggulan": false,
+    "deskripsi": "Sentra budidaya ikan kerapu cantang dan kerapu tikus unggulan di pesisir Kendit, dilengkapi dermaga kayu apung yang membentang ke perairan Selat Madura.",
+    "status": "Kawasan Bahari dan Budidaya Khas Situbondo",
+    "sumber": "Himpunan Nelayan Budidaya Situbondo",
+    "detail_tambahan": "Sentra Budidaya Kerapu Nasional",
+    "foto": "pita-kerapu.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kampung_Kerapu_Situbondo.jpg/800px-Kampung_Kerapu_Situbondo.jpg"
+  },
+  {
+    "id": "titik-nol-daendels",
+    "nama": "Titik Nol Jalan Pos Daendels Panarukan",
+    "kategori": "Sejarah",
+    "jenis": "Monumen Sejarah Nasional",
+    "lokasi": "Kawasan Pelabuhan Panarukan",
+    "kecamatan": "Panarukan",
+    "tahun": "1808",
+    "unggulan": true,
+    "deskripsi": "Ujung akhir pembangunan monumental Jalan Raya Pos (De Grote Postweg) sepanjang 1.000 km dari Anyer ke Panarukan oleh Daendels. Menjadikan Panarukan dermaga ekspor rempah, gula, dan kopi terkemuka.",
+    "status": "Monumen Sejarah Nasional",
+    "sumber": "Arsip Sejarah Daendels & Pemkab Situbondo",
+    "detail_tambahan": "Panjang Lintasan: 1.000 Kilometer dari Anyer",
+    "foto": "titik-nol-panarukan.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Dermaga_Panarukan.jpg/800px-Dermaga_Panarukan.jpg"
+  },
+  {
+    "id": "benteng-panarukan",
+    "nama": "Benteng & Pos Jaga VOC Panarukan",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benteng Pertahanan",
+    "lokasi": "Pelabuhan Panarukan",
+    "kecamatan": "Panarukan",
+    "tahun": "Abad ke-18",
+    "unggulan": true,
+    "deskripsi": "Tinggalan pos pertahanan militer dan pengawasan pelabuhan Belanda yang mengontrol arus ekspor komoditas hasil bumi di Selat Madura dan Laut Jawa.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/443/P/004.2/2021)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "Fungsi Lama: Pengawas Pelabuhan Daendels",
+    "foto": "benteng-panarukan.jpg",
+    "foto_url": "data/foto/benteng-panarukan.jpg"
+  },
+  {
+    "id": "gereja-maria-bintang-samudera",
+    "nama": "Menara Gereja Maria Bintang Samudera",
+    "kategori": "Cagar Budaya",
+    "jenis": "Bangunan Religi Bersejarah",
+    "lokasi": "Jl. Pelabuhan Panarukan",
+    "kecamatan": "Panarukan",
+    "tahun": "Awal Abad ke-20",
+    "unggulan": false,
+    "deskripsi": "Bangunan menara dan struktur lonceng peribadatan kuno yang melayani komunitas pelaut dan warga pesisir Panarukan sejak masa kolonial.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/170/431.013/2025)",
+    "sumber": "SK Bupati Situbondo Tahun 2025",
+    "detail_tambahan": "SK Penetapan Terbaru 2025",
+    "foto": "menara-gereja-maria-panarukan.jpg",
+    "foto_url": "data/foto/menara-gereja-maria-panarukan.jpg"
+  },
+  {
+    "id": "pg-olean",
+    "nama": "Kompleks Pabrik Gula Olean",
+    "kategori": "Cagar Budaya",
+    "jenis": "Situs Industri Sejarah",
+    "lokasi": "Desa Olean",
+    "kecamatan": "Situbondo",
+    "tahun": "1846",
+    "unggulan": true,
+    "deskripsi": "Pabrik gula tertua yang didirikan tahun 1846 dan menjadi living museum industri gula dunia. Hingga kini masih mengoperasikan lokomotif uap kuno berbahan bakar ampas tebu di jalur lori perkebunan.",
+    "status": "Terdata Warisan Industri Bersejarah",
+    "sumber": "Dinas Pendidikan dan Kebudayaan Situbondo",
+    "detail_tambahan": "Tahun Berdiri: 1846 | Lokomotif Uap Aktif",
+    "foto": "pg-olean.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/COLLECTIE_TROPENMUSEUM_Huize_%27Olean%27_in_de_omgeving_van_Pasirpoetih_op_Oost-Java_TMnr_60009804.jpg"
+  },
+  {
+    "id": "ancak-agung",
+    "nama": "Tradisi Ancak Agung Maulid Nabi",
+    "kategori": "Tradisi",
+    "jenis": "Tradisi Keagamaan Kolosal",
+    "lokasi": "Alun-alun Kabupaten Situbondo",
+    "kecamatan": "Situbondo",
+    "tahun": "Tradisi Tahunan",
+    "unggulan": true,
+    "deskripsi": "Peringatan Maulid Nabi Muhammad SAW dengan mengarak ribuan ancak bambu bertingkat berisi tumpeng nasi dan hasil bumi yang didoakan bersama oleh santri dan masyarakat luas.",
+    "status": "Agenda Tahunan Resmi Budaya Daerah",
+    "sumber": "Pemerintah Kabupaten Situbondo",
+    "detail_tambahan": "Waktu: Bulan Rabiul Awal | Karakter: Gotong Royong Warga",
+    "foto": "ancak-agung.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ancak_Agung_Situbondo.jpg/800px-Ancak_Agung_Situbondo.jpg"
+  },
+  {
+    "id": "tari-landhung",
+    "nama": "Tari Landhung (Lajher Pandhelungan)",
+    "kategori": "Kesenian",
+    "jenis": "Seni Tari Khas",
+    "lokasi": "Kabupaten Situbondo",
+    "kecamatan": "Situbondo",
+    "tahun": "2019",
+    "unggulan": true,
+    "deskripsi": "Tari kreasi khas daerah yang merepresentasikan garis pantai Situbondo terpanjang di Jawa Timur (150 km). Diciptakan oleh Hosnatun (Cak Tutun), tarian ini memadukan kelenturan gerak pesisir dan hentakan dinamis Pandalungan.",
+    "status": "Kesenian Resmi Khas Kabupaten Situbondo",
+    "sumber": "Dinas Pendidikan dan Kebudayaan Situbondo",
+    "detail_tambahan": "Koreografer: Hosnatun (Cak Tutun) | Tahun: 2019",
+    "foto": "tari-landhung.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Dokumentasi_tari_remo_munali_fatah.jpg/800px-Dokumentasi_tari_remo_munali_fatah.jpg"
+  },
+  {
+    "id": "petik-laut-kalbut",
+    "nama": "Tradisi Petik Laut Pelabuhan Kalbut",
+    "kategori": "Tradisi",
+    "jenis": "Ritus Bahari Pesisir",
+    "lokasi": "Pelabuhan Kalbut, Desa Semiring",
+    "kecamatan": "Mangaran",
+    "tahun": "Turun-temurun",
+    "unggulan": true,
+    "deskripsi": "Upacara syukuran nelayan Kalbut atas melimpahnya tangkapan laut dan doa keselamatan berlayar. Ditandai pelarungan replika perahu sesaji (gitek) ke tengah laut diiringi ratusan perahu hias berlayar.",
+    "status": "Warisan Budaya Takbenda Kemaritiman",
+    "sumber": "Rukun Nelayan Kalbut Mangaran",
+    "detail_tambahan": "Pusat Tradisi Petik Laut Utama Situbondo",
+    "foto": "hero-petik-laut.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Petik_laut.jpg/1600px-Petik_laut.jpg"
+  },
+  {
+    "id": "pelabuhan-kalbut",
+    "nama": "Pelabuhan Tradisional Kalbut",
+    "kategori": "Sejarah",
+    "jenis": "Dermaga Bersejarah Pesisir",
+    "lokasi": "Desa Semiring",
+    "kecamatan": "Mangaran",
+    "tahun": "Abad ke-19",
+    "unggulan": false,
+    "deskripsi": "Pelabuhan rakyat bersejarah yang menghubungkan pengangkutan barang dagangan dan ternak sapi antara Situbondo dan pulau-pulau di Madura seperti Pulau Raas dan Sapudi.",
+    "status": "Situs Sejarah Maritim Lokal",
+    "sumber": "Dinas Perhubungan Situbondo",
+    "detail_tambahan": "Jalur Tradisional Situbondo - Kepulauan Madura",
+    "foto": "pelabuhan-kalbut.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Layar_Terkembang.jpg/800px-Layar_Terkembang.jpg"
+  },
+  {
+    "id": "pg-panji",
+    "nama": "Kompleks Pabrik Gula Panji",
+    "kategori": "Cagar Budaya",
+    "jenis": "Situs Industri Gula",
+    "lokasi": "Kecamatan Panji",
+    "kecamatan": "Panji",
+    "tahun": "1884",
+    "unggulan": false,
+    "deskripsi": "Kompleks pabrik gula peninggalan kolonial Belanda yang dibangun tahun 1884. Menjadi pusat penggilingan tebu rakyat dan penggerak ekonomi agraria di lembah Panji.",
+    "status": "Situs Sejarah Industri Gula",
+    "sumber": "Arsip PG Panji & Pemkab Situbondo",
+    "detail_tambahan": "Tahun Berdiri: 1884 | Arsitektur Pabrik Abad 19",
+    "foto": "pg-panji.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/KITLV_185566_-_Halte_Pandji_bij_suikeronderneming_Pandji_bij_Kapongan_bij_Sitoebondo.jpg/600px-KITLV_185566_-_Halte_Pandji_bij_suikeronderneming_Pandji_bij_Kapongan_bij_Sitoebondo.jpg"
+  },
+  {
+    "id": "tari-remo-trisnawati",
+    "nama": "Tari Remo Trisnawati Panji",
+    "kategori": "Kesenian",
+    "jenis": "Seni Tari Klasik",
+    "lokasi": "Kecamatan Panji",
+    "kecamatan": "Panji",
+    "tahun": "1981",
+    "unggulan": false,
+    "deskripsi": "Varian tari Remo gaya Situbondo yang dipelopori penari perempuan Trisnawati sejak 1981. Mengekspresikan karakter ksatria wanita dengan sampur berayun tegas dan lonceng kaki bergemerincing.",
+    "status": "Tercatat Kesenian Tari Daerah",
+    "sumber": "Publikasi Kesenian Daerah Situbondo",
+    "detail_tambahan": "Gaya Khas: Remo Putri Karakter Tegas",
+    "foto": "tari-remo-panji.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tari_Remo_Remaja.jpg/800px-Tari_Remo_Remaja.jpg"
+  },
+  {
+    "id": "gelang-renteng-seletreng",
+    "nama": "Gelang Renteng Purbakala Seletreng",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Logam Purbakala",
+    "lokasi": "Desa Seletreng",
+    "kecamatan": "Kapongan",
+    "tahun": "Era Prasejarah Logam",
+    "unggulan": false,
+    "deskripsi": "Artefak gelang logam perunggu kuno yang tersusun bertautan, ditemukan pada penggalian situs hunian megalitik di kawasan Seletreng Kapongan.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/317/P/001.3/2023)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "SK Bupati 2023 | Bahan: Perunggu Logam Purba",
+    "foto": "gelang-renteng-seletreng.jpg",
+    "foto_url": "data/foto/gelang-renteng-seletreng.jpg"
+  },
+  {
+    "id": "cottoan-peleyan-kapongan",
+    "nama": "Kain Batik Kuno Cotto'an Peleyan",
+    "kategori": "Sejarah",
+    "jenis": "Kriya Tekstil Leluhur",
+    "lokasi": "Desa Peleyan",
+    "kecamatan": "Kapongan",
+    "tahun": "Abad ke-19",
+    "unggulan": false,
+    "deskripsi": "Peninggalan kain batik tertua di tanah Situbondo yang dinamai cotto'an. Teknik pewarnaan alami indigo dan soga yang diwariskan turun-temurun oleh para pembatik sepuh Peleyan.",
+    "status": "Warisan Kriya Leluhur Situbondo",
+    "sumber": "Dokumentasi Sentra Batik Peleyan",
+    "detail_tambahan": "Asal Nama: Cotto'an (Pewarnaan Tradisional)",
+    "foto": "batik-cottoan-peleyan.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Batik_Madura_dengan_Motif_Batik.jpg/800px-Batik_Madura_dengan_Motif_Batik.jpg"
+  },
+  {
+    "id": "macapat-madura",
+    "nama": "Tembang Macapat Mamaca Madura",
+    "kategori": "Kesenian",
+    "jenis": "Sastra Tutur & Tembang",
+    "lokasi": "Kecamatan Arjasa",
+    "kecamatan": "Arjasa",
+    "tahun": "Abad ke-18",
+    "unggulan": false,
+    "deskripsi": "Seni melantunkan tembang naskah kuno (mamaca) beraksara pegon atau Carakan Madura yang berisi wejangan budi pekerti luhur, kisah para nabi, tasawuf, dan riwayat leluhur.",
+    "status": "Tercatat Warisan Sastra Lisan",
+    "sumber": "Komunitas Pembaca Naskah Kuno Situbondo",
+    "detail_tambahan": "Media: Kitab Naskah Lontar & Daluwang",
+    "foto": "macapat-madura.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/De_gamelan_oor_De_Wali_Negara_van_Madoera%2C_P.A.A._Tjakraningrat%2C_geschonken_aan%2C_Bestanddeelnr_15962.jpg/800px-De_gamelan_oor_De_Wali_Negara_van_Madoera%2C_P.A.A._Tjakraningrat%2C_geschonken_aan%2C_Bestanddeelnr_15962.jpg"
+  },
+  {
+    "id": "batu-karang-arjasa",
+    "nama": "Tinggalan Megalitik Arjasa",
+    "kategori": "Cagar Budaya",
+    "jenis": "Situs Purbakala",
+    "lokasi": "Perbukitan Arjasa",
+    "kecamatan": "Arjasa",
+    "tahun": "Prasejarah",
+    "unggulan": false,
+    "deskripsi": "Struktur formasi batu alam megalitik yang dahulu dimanfaatkan sebagai tempat pertemuan para tetua adat prasejarah di perbukitan timur Situbondo.",
+    "status": "Tercatat dalam Inventaris ODCB Daerah",
+    "sumber": "Dinas Pendidikan dan Kebudayaan Situbondo",
+    "detail_tambahan": "Lokasi: Kawasan Perbukitan Arjasa",
+    "foto": "lumpang-batu-arjasa.jpg",
+    "foto_url": "data/foto/lumpang-batu-arjasa.jpg"
+  },
+  {
+    "id": "karapan-sapi-situbondo",
+    "nama": "Kesenian & Olahraga Karapan Sapi",
+    "kategori": "Kesenian",
+    "jenis": "Olahraga & Atraksi Tradisi",
+    "lokasi": "Kecamatan Jangkar",
+    "kecamatan": "Jangkar",
+    "tahun": "Sejak Era Kolonial 1910",
+    "unggulan": true,
+    "deskripsi": "Atraksi pacuan sepasang sapi jantan berhias kaleles kayu ukir khas budaya Pandalungan. Berakar dari tradisi membajak sawah yang berkembang menjadi ajang ketangkasan bergengsi dan silaturahmi warga.",
+    "status": "Warisan Budaya Tradisi Pandalungan",
+    "sumber": "Koleksi Dokumentasi Tropenmuseum 1910 & Paguyuban Karapan",
+    "detail_tambahan": "Sapi Pilihan dengan Hiasan Ukir Kaleles Khas",
+    "foto": "kerapan-sitoebondo.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/COLLECTIE_TROPENMUSEUM_Stierenwedloop_%28Kerappan%29_te_Sitoebondo_op_Oost-Java_tijdens_het_bezoek_van_de_Soesoehoenan_van_Solo_TMnr_60009914.jpg/800px-COLLECTIE_TROPENMUSEUM_Stierenwedloop_%28Kerappan%29_te_Sitoebondo_op_Oost-Java_tijdens_het_bezoek_van_de_Soesoehoenan_van_Solo_TMnr_60009914.jpg"
+  },
+  {
+    "id": "pelabuhan-jangkar",
+    "nama": "Pelabuhan Penyeberangan Jangkar",
+    "kategori": "Sejarah",
+    "jenis": "Dermaga Bersejarah Antarpulau",
+    "lokasi": "Desa Jangkar",
+    "kecamatan": "Jangkar",
+    "tahun": "Abad ke-20",
+    "unggulan": false,
+    "deskripsi": "Dermaga penyeberangan laut strategis di timur Situbondo yang menghubungkan Pulau Jawa dengan Pulau Madura (Kalianget), Pulau Raas, Sapudi, hingga Kepulauan Nusa Tenggara.",
+    "status": "Dermaga Maritim Strategis Daerah",
+    "sumber": "Dinas Perhubungan Situbondo",
+    "detail_tambahan": "Jalur Laut Utama ke Kepulauan Madura & NTB",
+    "foto": "pelabuhan-jangkar.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Ketapang_Ferry_Port%2C_East_Java%2C_20220821_1054_9794.jpg/800px-Ketapang_Ferry_Port%2C_East_Java%2C_20220821_1054_9794.jpg"
+  },
+  {
+    "id": "dolmen-mojosari",
+    "nama": "Dolmen Meja Batu Mojosari",
+    "kategori": "Cagar Budaya",
+    "jenis": "Struktur Megalitik",
+    "lokasi": "Desa Mojosari",
+    "kecamatan": "Asembagus",
+    "tahun": "Zaman Megalithikum",
+    "unggulan": true,
+    "deskripsi": "Meja batu purbakala berkaki batu penyangga yang dahulu difungsikan sebagai altar persembahan sesaji serta tempat musyawarah pemuka adat prasejarah.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/185/431.013/2024)",
+    "sumber": "Naskah Kajian TACB Kabupaten Situbondo",
+    "detail_tambahan": "Bentuk: Meja Batu Altar Sesaji Purba",
+    "foto": "dolmen-mojosari.jpg",
+    "foto_url": "data/foto/dolmen-mojosari.jpg"
+  },
+  {
+    "id": "komantan-korong",
+    "nama": "Tradisi Pengantin Komantan Korong",
+    "kategori": "Tradisi",
+    "jenis": "Tradisi Adat Pernikahan",
+    "lokasi": "Desa Asembagus",
+    "kecamatan": "Asembagus",
+    "tahun": "Turun-temurun",
+    "unggulan": true,
+    "deskripsi": "Ritus pernikahan khas masyarakat Pandalungan di mana pengantin pria dimasukkan ke dalam sangkar hias (korong) yang diselubungi kain batik dan bunga melati, lalu dipikul beramai-ramai menuju rumah mempelai wanita.",
+    "status": "Tercatat Warisan Adat Tradisi",
+    "sumber": "Lembaga Adat Desa Asembagus",
+    "detail_tambahan": "Makna: Tanggung Jawab & Perlindungan Suami",
+    "foto": "komantan-korong.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Baju_Adat_Pengantin_Madura_Lilin_dari_Sumenep_01.jpg/800px-Baju_Adat_Pengantin_Madura_Lilin_dari_Sumenep_01.jpg"
+  },
+  {
+    "id": "trolingkung",
+    "nama": "Musik Patrol Bambu Trolingkung",
+    "kategori": "Kesenian",
+    "jenis": "Seni Musik Tradisi",
+    "lokasi": "Kecamatan Asembagus",
+    "kecamatan": "Asembagus",
+    "tahun": "Abad ke-20",
+    "unggulan": false,
+    "deskripsi": "Ensambel musik kentongan bambu berlaras nada khas yang dimainkan secara ritmis keliling kampung saat ronda malam dan perayaan hari besar kemerdekaan.",
+    "status": "Tercatat Tradisi Kesenian Rakyat",
+    "sumber": "Himpunan Seniman Musik Bambu Asembagus",
+    "detail_tambahan": "Instrumen: Kentongan Bambu Multi-Nada",
+    "foto": "trolingkung-asembagus.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Angklung_Paglak.jpg/800px-Angklung_Paglak.jpg"
+  },
+  {
+    "id": "menhir-rajekwesi",
+    "nama": "Menhir Batu Tegak Rajekwesi Baluran",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Megalitik",
+    "lokasi": "Kawasan Savana Baluran",
+    "kecamatan": "Banyuputih",
+    "tahun": "Zaman Batu Besar",
+    "unggulan": true,
+    "deskripsi": "Tegakan batu andesit tunggal yang didirikan tegak di kawasan timur Baluran sebagai monumen pemujaan arwah leluhur serta tanda batas kawasan sakral prasejarah.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 100.3.3.2/185/431.013/2024)",
+    "sumber": "Naskah Kajian TACB Kabupaten Situbondo",
+    "detail_tambahan": "SK Bupati 2024 | Kawasan Taman Nasional Baluran",
+    "foto": "sarkofagus-rajekwesi.jpg",
+    "foto_url": "data/foto/sarkofagus-rajekwesi.jpg"
+  },
+  {
+    "id": "batu-lesung-sumberejo",
+    "nama": "Situs Batu Lesung Sumberejo",
+    "kategori": "Cagar Budaya",
+    "jenis": "Situs Megalitik",
+    "lokasi": "Desa Sumberejo",
+    "kecamatan": "Banyuputih",
+    "tahun": "Prasejarah",
+    "unggulan": false,
+    "deskripsi": "Gugusan 5 lumpang batu berlubang purba yang berjejer rapi di kawasan timur Situbondo, menjadi bukti awal tradisi penumbukan bulir pangan agraris nusantara.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/392/P/004.2/2020)",
+    "sumber": "TACB Situbondo",
+    "detail_tambahan": "Jumlah: 5 Formasi Lumpang Batu Kuno",
+    "foto": "batu-lesung-sumberejo.jpg",
+    "foto_url": "data/foto/batu-lesung-sumberejo.jpg"
+  },
+  {
+    "id": "batu-togu",
+    "nama": "Situs Menhir Batu Togu Krajan",
+    "kategori": "Cagar Budaya",
+    "jenis": "Benda Megalitik",
+    "lokasi": "Desa Krajan",
+    "kecamatan": "Banyuputih",
+    "tahun": "Zaman Megalithikum",
+    "unggulan": false,
+    "deskripsi": "Menhir batu tegak purba berukuran tinggi 85 cm, lebar 40 cm, dan tebal 17 cm yang dikeramatkan sebagai penanda wilayah kepemimpinan masa lampau.",
+    "status": "Cagar Budaya Peringkat Kabupaten (SK Bupati 188/443/P/004.2/2021)",
+    "sumber": "Naskah Kajian TACB Situbondo",
+    "detail_tambahan": "Dimensi: 85 x 40 x 17 cm | SK Bupati 2021",
+    "foto": "batu-togu-krajan.jpg",
+    "foto_url": "data/foto/batu-togu-krajan.jpg"
+  },
+  {
+    "id": "perjuangan-khr-asad",
+    "nama": "Markas Perjuangan KHR. As'ad Syamsul Arifin",
+    "kategori": "Sejarah",
+    "jenis": "Peristiwa Kemerdekaan RI",
+    "lokasi": "Pondok Pesantren Sukorejo",
+    "kecamatan": "Banyuputih",
+    "tahun": "1945 - 1949",
+    "unggulan": true,
+    "deskripsi": "Jejak markas perjuangan Laskar Sabilillah dan Hizbullah di Sukorejo yang dipimpin ulama kharismatik KHR. As'ad Syamsul Arifin dalam membendung agresi militer penjajah di tapal kuda timur Jawa Timur. Beliau dianugerahi gelar Pahlawan Nasional RI pada 2016.",
+    "status": "Situs Tokoh Pahlawan Nasional RI",
+    "sumber": "Kementerian Sosial RI & Biografi KHR. As'ad Syamsul Arifin",
+    "detail_tambahan": "Gelar: Pahlawan Nasional RI (Keppres 115/TK/2016)",
+    "foto": "khr-asad-syamsul-arifin.jpg",
+    "foto_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/KHR._As%27ad_Syamsul_Arifin.jpg/600px-KHR._As%27ad_Syamsul_Arifin.jpg"
+  }
+];
+    window.INITIAL_TIMELINE = [
+  {
+    "id": "era-megalitikum",
+    "era": "Zaman Prasejarah",
+    "tahun": "± 2500 - 500 SM",
+    "judul": "Peradaban Megalitikum Lereng Argopuro & Baluran",
+    "ringkasan": "Sebaran tinggalan sarkofagus, menhir, dan batu dolmen membuktikan Situbondo adalah salah satu sentra peradaban megalitik tertua dan terpadat di Jawa Timur.",
+    "uraian": "Jejak hunian purbakala di wilayah Situbondo terbentang dari lereng Gunung Argopuro di sisi barat hingga kawasan savana Baluran di timur. Ditemukan lebih dari puluhan sarkofagus batu monolitik di Bungatan, Suboh, dan Cemara, menhir tegak di Rajekwesi Banyuputih, serta dolmen meja batu di Mojosari Asembagus. Tinggalan ini mencerminkan tatanan masyarakat agraris purba yang telah mengenal sistem kepercayaan penghormatan leluhur.",
+    "sumber": "Balai Pelestarian Kebudayaan (BPK) Wilayah XI & Naskah Kajian TACB Situbondo",
+    "lokasi": "Bungatan, Suboh, Asembagus, Banyuputih",
+    "foto": "pita-baluran.jpg"
+  },
+  {
+    "id": "era-majapahit",
+    "era": "Kerajaan Klasik Nusantara",
+    "tahun": "1365 M",
+    "judul": "Panarukan Bandar Utama Majapahit (Kitab Nagarakretagama)",
+    "ringkasan": "Panarukan tercatat dalam pupuh 28 Kitab Nagarakretagama karya Mpu Prapanca sebagai pelabuhan bandar laut strategis Majapahit.",
+    "uraian": "Dalam Kitab Desawarnana (Nagarakretagama) pupuh 28 karya Mpu Prapanca yang ditulis pada tahun 1365 Masehi semasa pemerintahan Prabu Hayam Wuruk, wilayah Patukangan (Pecaron) dan Panarukan dicatat sebagai pelabuhan transit resmi kekaisaran Majapahit menuju wilayah timur nusantara. Panarukan menjadi gerbang niaga maritim yang mempertemukan saudagar rempah-rempah Maluku, beras Jawa, dan pedagang antarpulau.",
+    "sumber": "Kitab Nagarakretagama (Mpu Prapanca, 1365) & Sejarah Kebudayaan Jawa Timur",
+    "lokasi": "Kecamatan Panarukan",
+    "foto": "hero-pasir-putih.jpg"
+  },
+  {
+    "id": "era-blambangan-portugis",
+    "era": "Penjelajahan Samudera",
+    "tahun": "1512 - 1515 M",
+    "judul": "Kesaksian Tomé Pires (Suma Oriental) tentang Panarukan",
+    "ringkasan": "Penjelajah Portugis Tomé Pires mencatat Panarukan sebagai kota pelabuhan besar di bawah kedaulatan Kerajaan Blambangan.",
+    "uraian": "Dalam naskah penjelajahan legendaris Suma Oriental karangan musafir Portugis Tomé Pires (1512-1515), Panarukan digambarkan sebagai pelabuhan internasional yang ramai dan benteng pertahanan maritim Kerajaan Blambangan. Kapal-kapal dagang dari berbagai penjuru singgah mengisi perbekalan air tawar dan bertransaksi komoditas pertanian serta hasil hutan sebelum menyeberang ke kepulauan Nusa Tenggara.",
+    "sumber": "The Suma Oriental of Tomé Pires (Armando Cortesão, The Hakluyt Society, 1944)",
+    "lokasi": "Pesisir Teluk Panarukan",
+    "foto": "pita-laut-jawa.jpg"
+  },
+  {
+    "id": "era-pate-alos",
+    "era": "Pendirian Kadipaten",
+    "tahun": "1743 - 1764 M",
+    "judul": "Kepemimpinan Kyai Pate Alos & Berdirinya Kadipaten Besuki",
+    "ringkasan": "Raden Bagus Kasim (Kyai Pate Alos / Pangeran Aryo Soerjoadiningrat I) membuka wilayah dan mendirikan pusat pemerintahan pertama di Besuki.",
+    "uraian": "Sosok sentral perintis pemerintahan Situbondo adalah Raden Bagus Kasim yang bergelar Tumenggung Joyolelono atau Kyai Pate Alos. Beliau memimpin pembukaan hutan belantara dan penataan permukiman di kawasan Besuki, menjadikannya kadipaten yang makmur dan aman. Atas kepemimpinannya yang arif dan berwibawa (alos), beliau sangat dihormati oleh seluruh masyarakat Madura dan Jawa hingga hari ini, dengan makam pusaka yang terus diziarahi di Besuki.",
+    "sumber": "Babad Besuki, Arsip Kearsipan Jawa Timur, & Dokumen Balai Pelestarian Nilai Budaya",
+    "lokasi": "Kecamatan Besuki",
+    "foto": "pendopo-besuki.jpg"
+  },
+  {
+    "id": "era-karesidenan-besuki",
+    "era": "Karesidenan Hindia Belanda",
+    "tahun": "1800-an",
+    "judul": "Besuki Menjadi Ibu Kota Karesidenan Besuki (Residentie Besoeki)",
+    "ringkasan": "Pemerintah kolonial Hindia Belanda menetapkan Besuki sebagai ibu kota karesidenan yang membawahi lima afdeeling di ujung timur Jawa.",
+    "uraian": "Pada awal abad ke-19, posisi Besuki semakin strategis hingga diangkat menjadi ibu kota Karesidenan Besuki (Residentie Besoeki). Wilayah administratif ini membawahi Afdeeling Besuki, Panarukan, Bondowoso, Jember, dan Banyuwangi. Di masa ini dibangun Gedung Rumah Dinas Residen Besuki, Kantor Kawedanan, Rumah Bupati Besuki I, serta Klenteng Poo Tong Bio sebagai simpul peribadatan saudagar Tionghoa yang kini seluruhnya telah berstatus cagar budaya resmi.",
+    "sumber": "Regeeringsalmanak voor Nederlandsch-Indie & SK Penetapan Cagar Budaya Bupati Situbondo 2020",
+    "lokasi": "Kota Tua Besuki",
+    "foto": ""
+  },
+  {
+    "id": "era-jalan-daendels",
+    "era": "Jalan Raya Pos",
+    "tahun": "1808 M",
+    "judul": "Ujung Timur Jalan Raya Pos Anyer - Panarukan (De Grote Postweg)",
+    "ringkasan": "Gubernur Jenderal Daendels menetapkan Panarukan sebagai titik akhir lintasan jalan raya pos sepanjang 1.000 kilometer.",
+    "uraian": "Gubernur Jenderal Herman Willem Daendels memerintahkan pembuatan jalan raya pos dari Anyer (Banten) hingga Panarukan. Panarukan dipilih sebagai ujung akhir karena memiliki teluk pelabuhan yang tenang dan terlindung dari gelombang samudera, menjadikannya pintu keluar utama komoditas perkebunan kopi, gula, dan tembakau dari Karesidenan Besuki menuju pasar dunia.",
+    "sumber": "Arsip Nasional Republik Indonesia (ANRI) & De Grote Postweg (Pramoedya Ananta Toer)",
+    "lokasi": "Panarukan (Titik Nol Km)",
+    "foto": ""
+  },
+  {
+    "id": "era-industri-gula",
+    "era": "Industrialisasi Pesisir",
+    "tahun": "1846 - 1897 M",
+    "judul": "Kejayaan Industri Gula & Jalur Kereta Api Staatsspoorwegen",
+    "ringkasan": "Pendirian pabrik-pabrik gula bersejarah (PG Olean, PG Panji, PG Asembagus) dan jalur kereta api Kalisat - Panarukan.",
+    "uraian": "Situbondo berkembang pesat sebagai salah satu sentra industri gula terbesar di Hindia Belanda. Didirikan PG Olean (1846) yang hingga kini masih mempertahankan lokomotif uap kuno, PG Panji (1884), PG Demas, PG Wringinanom, dan PG Asembagus (1891). Untuk mengalirkan berton-ton gula ke kapal ekspor, Staatsspoorwegen (SS) membangun jalur rel kereta api Kalisat-Panarukan yang diresmikan pada tahun 1897.",
+    "sumber": "Arsip Suikerfabriek Oost-Java & Dokumentasi Sejarah Perkeretaapian Indonesia",
+    "lokasi": "Panji, Olean, Asembagus",
+    "foto": "pita-utama-raya.jpg"
+  },
+  {
+    "id": "era-harjakasi",
+    "era": "Hari Jadi Resmi",
+    "tahun": "15 Agustus",
+    "judul": "Penetapan Hari Jadi Kabupaten Situbondo (Harjakasi)",
+    "ringkasan": "Peringatan resmi berdirinya pemerintahan Kabupaten Situbondo berpijak pada penataan afdeeling dan pemindahan ibu kota ke Situbondo.",
+    "uraian": "Hari Jadi Kabupaten Situbondo (Harjakasi) ditetapkan setiap tanggal 15 Agustus melalui Peraturan Daerah. Momentum ini memperingati babak bersejarah pemindahan dan penataan pusat pemerintahan dari Besuki ke wilayah Situbondo (pusat kota saat ini), yang kemudian diperingati setiap tahun melalui kirab budaya agung, pawai pusaka, ziarah leluhur Kyai Pate Alos, dan pergelaran kesenian rakyat.",
+    "sumber": "Peraturan Daerah Kabupaten Situbondo tentang Hari Jadi Kabupaten Situbondo",
+    "lokasi": "Kabupaten Situbondo",
+    "foto": "ancak-agung.jpg"
+  },
+  {
+    "id": "era-pahlawan-asad",
+    "era": "Perang Kemerdekaan",
+    "tahun": "1945 - 1949 M",
+    "judul": "Perjuangan KHR. As'ad Syamsul Arifin & Laskar Sabilillah",
+    "ringkasan": "Pesantren Sukorejo Banyuputih menjadi basis perlawanan bersenjata dan penggemblengan pejuang kemerdekaan melawan penjajah.",
+    "uraian": "Ulama kharismatik KHR. As'ad Syamsul Arifin dari Pondok Pesantren Salafiyah Syafi'iyah Sukorejo memimpin Laskar Sabilillah dan Hizbullah di wilayah karesidenan Besuki. Beliau mengobarkan jihad membela tanah air, mengoordinasikan pertempuran gerilya di daerah pelabuhan, serta menyokong logistik pejuang kemerdekaan. Atas jasa kepahlawanannya, Presiden RI menganugerahkan gelar Pahlawan Nasional kepada KHR. As'ad pada tahun 2016.",
+    "sumber": "Keputusan Presiden RI No. 115/TK/Tahun 2016 & Biografi KHR. As'ad Syamsul Arifin",
+    "lokasi": "Sukorejo, Kecamatan Banyuputih",
+    "foto": "pita-kerapu.jpg"
+  },
+  {
+    "id": "era-pp-28-1972",
+    "era": "Legitimasi Modern",
+    "tahun": "1972 M",
+    "judul": "Perubahan Nama Kabupaten Panarukan Menjadi Kabupaten Situbondo",
+    "ringkasan": "Pemerintah menerbitkan PP No. 28 Tahun 1972 yang secara resmi mengubah nama Kabupaten Panarukan menjadi Kabupaten Situbondo.",
+    "uraian": "Berdasarkan Peraturan Pemerintah Republik Indonesia No. 28 Tahun 1972 tanggal 21 September 1972, nama 'Kabupaten Panarukan' secara yuridis resmi diubah menjadi 'Kabupaten Situbondo'. Penyesuaian ini menyelaraskan nama daerah otonom tingkat II dengan nama ibu kota kabupaten tempat berkedudukannya kantor bupati dan pusat kegiatan aparatur pemerintahan.",
+    "sumber": "Lembaran Negara Republik Indonesia No. 39 Tahun 1972 (Peraturan Pemerintah No. 28/1972)",
+    "lokasi": "Kabupaten Situbondo",
+    "foto": ""
+  },
+  {
+    "id": "era-muktamar-pancasila",
+    "era": "Kota Santri Pancasila",
+    "tahun": "1984 M",
+    "judul": "Muktamar NU Sukorejo & Deklarasi Asas Tunggal Pancasila",
+    "ringkasan": "Muktamar Nahdlatul Ulama ke-27 di Sukorejo Situbondo melahirkan keputusan monumental penerimaan Pancasila sebagai dasar negara.",
+    "uraian": "Pada bulan Desember 1984 di Pondok Pesantren Sukorejo, Situbondo mencatat tinta emas sejarah bangsa saat Muktamar NU ke-27 menetapkan Deklarasi tentang Hubungan Islam dan Pancasila. Diprakarsai oleh KHR. As'ad Syamsul Arifin bersama para kiai sepuh, NU menyatakan bahwa penerimaan Pancasila tidak bertentangan dengan syariat Islam dan NKRI adalah bentuk final. Dari peristiwa ini lahir identitas kuat Situbondo sebagai Kota Santri Pancasila.",
+    "sumber": "Hasil Muktamar NU ke-27 di Situbondo (1984) & Risalah Kebangsaan PBNU",
+    "lokasi": "Sukorejo, Kecamatan Banyuputih",
+    "foto": "pita-mangrove.jpg"
+  },
+  {
+    "id": "era-kontemporer",
+    "era": "Era Pelestarian Digital",
+    "tahun": "2020 - Sekarang",
+    "judul": "Konservasi Cagar Budaya & Kebangkitan Seni Tradisi Situbondo",
+    "ringkasan": "Penetapan puluhan cagar budaya resmi SK Bupati, pengukuhan Tari Landhung, dan digitalisasi warisan kebudayaan daerah.",
+    "uraian": "Kabupaten Situbondo giat melakukan registrasi dan penyelamatan warisan leluhur. Sebanyak 77 objek cagar budaya (bangunan, struktur, situs, dan benda purbakala) telah resmi ditetapkan melalui SK Bupati Situbondo rentang 2020 hingga 2025. Di bidang seni, Tari Landhung resmi menjadi ikon tarian daerah, festival ancak agung dan petik laut digelar rutin, serta inventarisasi budaya kini dapat diakses secara terbuka oleh seluruh masyarakat Situbondo.",
+    "sumber": "Dinas Pendidikan dan Kebudayaan Kabupaten Situbondo & Registrasi Cagar Budaya Nasional",
+    "lokasi": "17 Kecamatan se-Kabupaten Situbondo",
+    "foto": "hero-petik-laut.jpg"
+  }
+];
+    window.INITIAL_KECAMATAN = [
+  "Banyuglugur",
+  "Jatibanteng",
+  "Besuki",
+  "Suboh",
+  "Mlandingan",
+  "Sumbermalang",
+  "Bungatan",
+  "Kendit",
+  "Panarukan",
+  "Situbondo",
+  "Mangaran",
+  "Panji",
+  "Kapongan",
+  "Arjasa",
+  "Jangkar",
+  "Asembagus",
+  "Banyuputih"
+];
+  </script>
+
+  <script>
+  /**
+   * ============================================================
+   * Web Kebudayaan Situbondo - Client Logic & SVG Engine (Scripts.html)
+   * 100% Vector SVG | Zero Emoji | Ramah Masyarakat Situbondo
+   * ============================================================
+   */
+
+  var SVG_ICONS = {
+    search: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L18 18"/></svg>',
+    clear: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><line x1="15" y1="5" x2="5" y2="15"/><line x1="5" y1="5" x2="15" y2="15"/></svg>',
+    grid: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/><rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/><rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/><rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/></svg>',
+    cagarBudaya: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/></svg>',
+    kesenian: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/></svg>',
+    tradisi: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M10 2.5c2 2.5 4 4.5 4 7a4 4 0 01-8 0c0-2.5 2-4.5 4-7zM7 14.5l-2 3M13 14.5l2 3M10 14.5v3"/></svg>',
+    sejarah: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M6 3.5h8a2.5 2.5 0 012.5 2.5v9a2.5 2.5 0 01-2.5 2.5H5a2 2 0 01-2-2V5.5A2 2 0 015 3.5h1zM6 7.5h8M6 11.5h5"/></svg>',
+    pin: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="6.5" r="1.75"/></svg>',
+    calendar: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 6.5h12M5 1.5v3M11 1.5v3"/></svg>',
+    star: '<svg class="icon-svg" viewBox="0 0 16 16"><path d="M8 1.25l2.12 4.3 4.75.69-3.44 3.35.81 4.73L8 12.08 3.76 14.32l.81-4.73L1.13 6.24l4.75-.69L8 1.25z"/></svg>',
+    arrow: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>',
+    shield: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M8 1.5l5 2.25v4.25c0 3.5-2.5 6-5 6.75-2.5-.75-5-3.25-5-6.75V3.75L8 1.5z"/><path d="M6 7.5l1.5 1.5 3-3"/></svg>',
+    archive: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/><path d="M5 6.5h6M5 9.5h4"/></svg>',
+    info: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 7.5v4M8 4.75v.5"/></svg>',
+    tag: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M1.5 8.5L7.5 2.5H13.5V8.5L7.5 14.5L1.5 8.5Z"/><circle cx="10" cy="5" r="1"/></svg>',
+    copy: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M3.5 10.5h-1a1 1 0 01-1-1v-6a1 1 0 011-1h6a1 1 0 011 1v1"/></svg>',
+    check: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5 6.5-7.5"/></svg>',
+    reset: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 101.6-3.9L2 6M2 2v4h4"/></svg>',
+    timeline: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><circle cx="5" cy="5" r="2.5"/><circle cx="15" cy="10" r="2.5"/><circle cx="5" cy="15" r="2.5"/><path d="M5 7.5v5M7.5 5h3.5l4 2.5M7.5 15h3.5l4-2.5"/></svg>',
+    community: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/></svg>'
+  };
+
+  var State = {
+    items: [],
+    timeline: [],
+    kecamatanList: [],
+    filteredItems: [],
+    activeCategory: 'Semua',
+    activeKecamatan: 'Semua',
+    searchQuery: '',
+    currentView: 'katalog',
+    selectedItem: null
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initApp();
+  });
+
+  function initApp() {
+    // 1. Inisialisasi Data dari Window Injection
+    if (window.INITIAL_DATA && Array.isArray(window.INITIAL_DATA)) {
+      State.items = window.INITIAL_DATA;
+    }
+    if (window.INITIAL_TIMELINE && Array.isArray(window.INITIAL_TIMELINE)) {
+      State.timeline = window.INITIAL_TIMELINE;
+    }
+    if (window.INITIAL_KECAMATAN && Array.isArray(window.INITIAL_KECAMATAN)) {
+      State.kecamatanList = window.INITIAL_KECAMATAN;
+    }
+
+    // 2. Populasi Dropdown Kecamatan
+    populateKecamatanSelect();
+
+    // 3. Render Awal
+    applyFilterAndRender();
+    renderTimeline();
+    renderPandalunganGrid();
+    updateMetrics();
+
+    // 4. Setup Event Listeners
+    setupEventListeners();
+  }
+
+  function populateKecamatanSelect() {
+    var select = document.getElementById('kecamatanSelect');
+    if (!select || !State.kecamatanList.length) return;
+
+    // Bersihkan opsi lama selain opsi pertama
+    select.innerHTML = '<option value="Semua">Semua Kecamatan (17 Wilayah)</option>';
+    State.kecamatanList.forEach(function(kec) {
+      var opt = document.createElement('option');
+      opt.value = kec;
+      opt.textContent = 'Kecamatan ' + kec;
+      select.appendChild(opt);
+    });
+  }
+
+  function setupEventListeners() {
+    // Nav View Switcher (Katalog, Linimasa Sejarah, Pandalungan)
+    var viewBtns = document.querySelectorAll('.view-tab-btn');
+    viewBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var viewName = this.getAttribute('data-view');
+        switchView(viewName);
+      });
+    });
+
+    // Input Pencarian
+    var searchInput = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClearBtn');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        State.searchQuery = e.target.value.trim().toLowerCase();
+        if (clearBtn) {
+          clearBtn.style.display = State.searchQuery ? 'flex' : 'none';
+        }
+        applyFilterAndRender();
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+        }
+        clearBtn.style.display = 'none';
+        State.searchQuery = '';
+        applyFilterAndRender();
+      });
+    }
+
+    // Dropdown Kecamatan
+    var kecSelect = document.getElementById('kecamatanSelect');
+    if (kecSelect) {
+      kecSelect.addEventListener('change', function(e) {
+        State.activeKecamatan = e.target.value;
+        applyFilterAndRender();
+      });
+    }
+
+    // Tombol Kategori
+    var categoryBtns = document.querySelectorAll('.cat-tab-btn');
+    categoryBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        categoryBtns.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        State.activeCategory = this.getAttribute('data-category');
+        applyFilterAndRender();
+      });
+    });
+
+    // Modal
+    var modalBackdrop = document.getElementById('detailModal');
+    var closeBtn = document.getElementById('modalCloseBtn');
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', function(e) {
+        if (e.target === modalBackdrop) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    var copyBtn = document.getElementById('btnCopyModal');
+    if (copyBtn) copyBtn.addEventListener('click', copyItemSummary);
+  }
+
+  function switchView(viewName) {
+    State.currentView = viewName;
+
+    // Update active tab button
+    var viewBtns = document.querySelectorAll('.view-tab-btn');
+    viewBtns.forEach(function(btn) {
+      if (btn.getAttribute('data-view') === viewName) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Show/hide view sections
+    var katalogView = document.getElementById('katalogView');
+    var timelineView = document.getElementById('timelineView');
+    var pandalunganView = document.getElementById('pandalunganView');
+
+    if (katalogView) katalogView.style.display = (viewName === 'katalog') ? 'block' : 'none';
+    if (timelineView) timelineView.style.display = (viewName === 'sejarah') ? 'block' : 'none';
+    if (pandalunganView) pandalunganView.style.display = (viewName === 'pandalungan') ? 'block' : 'none';
+
+    // Scroll smoothly to content top
+    var mainEl = document.querySelector('.main-content');
+    if (mainEl) {
+      mainEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function filterByKecamatan(kecName) {
+    State.activeKecamatan = kecName;
+    var select = document.getElementById('kecamatanSelect');
+    if (select) select.value = kecName;
+    switchView('katalog');
+    applyFilterAndRender();
+  }
+
+  function applyFilterAndRender() {
+    var q = State.searchQuery;
+    var cat = State.activeCategory;
+    var kec = State.activeKecamatan;
+
+    State.filteredItems = State.items.filter(function(item) {
+      var matchCategory = (cat === 'Semua') || 
+        (item.kategori && item.kategori.toLowerCase() === cat.toLowerCase());
+
+      var matchKecamatan = (kec === 'Semua') || 
+        (item.kecamatan && item.kecamatan.toLowerCase() === kec.toLowerCase());
+
+      var matchQuery = !q || (
+        (item.nama && item.nama.toLowerCase().indexOf(q) !== -1) ||
+        (item.lokasi && item.lokasi.toLowerCase().indexOf(q) !== -1) ||
+        (item.kecamatan && item.kecamatan.toLowerCase().indexOf(q) !== -1) ||
+        (item.jenis && item.jenis.toLowerCase().indexOf(q) !== -1) ||
+        (item.deskripsi && item.deskripsi.toLowerCase().indexOf(q) !== -1)
+      );
+
+      return matchCategory && matchKecamatan && matchQuery;
+    });
+
+    renderCards();
+    updateResultCount();
+  }
+
+  function renderCards() {
+    var grid = document.getElementById('cultureGrid');
+    var emptyState = document.getElementById('emptySearchState');
+    if (!grid) return;
+
+    if (State.filteredItems.length === 0) {
+      grid.innerHTML = '';
+      if (emptyState) emptyState.style.display = 'block';
+      return;
+    }
+
+    if (emptyState) emptyState.style.display = 'none';
+
+    var html = '';
+    State.filteredItems.forEach(function(item) {
+      var catClass = getCategoryClass(item.kategori);
+      var catIcon = getCategorySvg(item.kategori);
+      var featuredBadgeHtml = item.unggulan ? 
+        '<span class="badge-sorotan">' + SVG_ICONS.star + ' Sorotan</span>' : '';
+      
+      var yearTagHtml = item.tahun ? 
+        '<span class="card-year-tag">' + SVG_ICONS.calendar + ' ' + escapeHtml(item.tahun) + '</span>' : '';
+
+      var kecBadgeHtml = item.kecamatan ? 
+        '<span class="card-kecamatan-tag">Kec. ' + escapeHtml(item.kecamatan) + '</span>' : '';
+
+      var mediaHtml = '';
+      if (item.foto && item.foto.trim() !== '') {
+        var localSrc = 'data/foto/' + item.foto;
+        var onlineSrc = item.foto_url || '';
+        mediaHtml = '<div class="card-media-banner">' +
+          '<img class="card-media-img" src="' + localSrc + '" alt="' + escapeHtml(item.nama) + '" ' +
+            'onerror="if(this.src.indexOf(\'http\')===-1 && \'' + onlineSrc + '\'){this.src=\'' + onlineSrc + '\';}else{this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';}" loading="lazy"/>' +
+          '<div class="card-media-motif" style="display:none;">' + getMotifPatternSvg() + '</div>' +
+          '<div class="card-media-overlay">' +
+            '<span class="badge-category-pill ' + catClass + '">' + catIcon + ' ' + escapeHtml(item.kategori || 'Cagar Budaya') + '</span>' +
+            featuredBadgeHtml +
+          '</div>' +
+        '</div>';
+      } else {
+        mediaHtml = '<div class="card-media-banner">' +
+          '<div class="card-media-motif">' + getMotifPatternSvg() + '</div>' +
+          '<div class="card-media-overlay">' +
+            '<span class="badge-category-pill ' + catClass + '">' + catIcon + ' ' + escapeHtml(item.kategori || 'Cagar Budaya') + '</span>' +
+            featuredBadgeHtml +
+          '</div>' +
+        '</div>';
+      }
+
+      html += '<div class="culture-card" onclick="openDetail(\'' + escapeHtml(item.id) + '\')">' +
+        mediaHtml +
+        '<div class="card-body">' +
+          '<h3 class="card-title">' + escapeHtml(item.nama) + '</h3>' +
+          '<div class="card-location-row">' +
+            SVG_ICONS.pin + ' ' +
+            '<span>' + escapeHtml(item.lokasi || 'Situbondo') + '</span>' +
+            kecBadgeHtml +
+            yearTagHtml +
+          '</div>' +
+          '<p class="card-snippet">' + escapeHtml(item.deskripsi || '') + '</p>' +
+        '</div>' +
+        '<div class="card-footer">' +
+          '<span class="card-type-label">' + SVG_ICONS.tag + ' ' + escapeHtml(item.jenis || 'Inventaris') + '</span>' +
+          '<button class="btn-card-action" type="button">Lihat Rincian ' + SVG_ICONS.arrow + '</button>' +
+        '</div>' +
+      '</div>';
+    });
+
+    grid.innerHTML = html;
+  }
+
+  function renderTimeline() {
+    var container = document.getElementById('timelineTreeContainer');
+    if (!container || !State.timeline.length) return;
+
+    var html = '';
+    State.timeline.forEach(function(item) {
+      html += '<div class="timeline-node-card">' +
+        '<div class="timeline-dot"><div class="timeline-dot-inner"></div></div>' +
+        '<div class="timeline-meta-bar">' +
+          '<span class="timeline-era-chip">' + escapeHtml(item.era || 'Kronik Sejarah') + '</span>' +
+          '<div class="timeline-year-text">' + SVG_ICONS.calendar + ' ' + escapeHtml(item.tahun || '-') + '</div>' +
+        '</div>' +
+        '<h3 class="timeline-node-title">' + escapeHtml(item.judul) + '</h3>' +
+        '<p class="timeline-node-lead">' + escapeHtml(item.ringkasan) + '</p>' +
+        '<p class="timeline-node-body">' + escapeHtml(item.uraian) + '</p>' +
+        '<div class="timeline-footer-row">' +
+          '<div class="timeline-src-text">' + SVG_ICONS.archive + ' <strong>Rujukan:</strong> ' + escapeHtml(item.sumber) + '</div>' +
+          '<div>' + SVG_ICONS.pin + ' ' + escapeHtml(item.lokasi || 'Kabupaten Situbondo') + '</div>' +
+        '</div>' +
+      '</div>';
+    });
+
+    container.innerHTML = html;
+  }
+
+  function renderPandalunganGrid() {
+    var grid = document.getElementById('kecamatanGridCards');
+    if (!grid || !State.kecamatanList.length) return;
+
+    var html = '';
+    State.kecamatanList.forEach(function(kec) {
+      var count = State.items.filter(function(i) {
+        return (i.kecamatan || '').toLowerCase() === kec.toLowerCase();
+      }).length;
+
+      html += '<div class="kecamatan-info-card" onclick="filterByKecamatan(\'' + escapeHtml(kec) + '\')">' +
+        '<div class="kecamatan-card-top">' +
+          '<h4 class="kecamatan-card-name">' + escapeHtml(kec) + '</h4>' +
+          '<span class="kecamatan-card-count">' + count + ' Warisan</span>' +
+        '</div>' +
+        '<p class="kecamatan-card-desc">Jelajahi cagar budaya, tradisi, dan kesenian di Kecamatan ' + escapeHtml(kec) + ' &rarr;</p>' +
+      '</div>';
+    });
+
+    grid.innerHTML = html;
+  }
+
+  function openDetail(id) {
+    var item = State.items.find(function(it) { return it.id === id; });
+    if (!item) return;
+
+    State.selectedItem = item;
+
+    var modalImg = document.getElementById('modalBannerImg');
+    var modalMotif = document.getElementById('modalBannerMotif');
+    
+    if (item.foto && item.foto.trim() !== '') {
+      var localSrc = 'data/foto/' + item.foto;
+      var onlineSrc = item.foto_url || '';
+      modalImg.src = localSrc;
+      modalImg.style.display = 'block';
+      modalImg.onerror = function() {
+        if (onlineSrc && this.src.indexOf('http') === -1) {
+          this.src = onlineSrc;
+        } else {
+          this.style.display = 'none';
+          modalMotif.style.display = 'flex';
+        }
+      };
+      modalMotif.style.display = 'none';
+    } else {
+      modalImg.style.display = 'none';
+      modalMotif.style.display = 'flex';
+    }
+
+    var catBadge = document.getElementById('modalCategoryBadge');
+    catBadge.className = 'badge-category-pill ' + getCategoryClass(item.kategori);
+    catBadge.innerHTML = getCategorySvg(item.kategori) + ' ' + escapeHtml(item.kategori || '-');
+
+    var sorotanWrap = document.getElementById('modalSorotanWrap');
+    if (sorotanWrap) {
+      sorotanWrap.innerHTML = item.unggulan ? 
+        '<span class="badge-sorotan">' + SVG_ICONS.star + ' Sorotan Utama</span>' : '';
+    }
+
+    document.getElementById('modalTitle').textContent = item.nama;
+    document.getElementById('modalNarrative').textContent = item.deskripsi || 'Belum ada uraian rincian.';
+    
+    document.getElementById('modalValLocation').textContent = (item.lokasi || '-') + (item.kecamatan ? ' (Kec. ' + item.kecamatan + ')' : '');
+    document.getElementById('modalValType').textContent = item.jenis || '-';
+    document.getElementById('modalValYear').textContent = item.tahun || 'Tidak tercatat';
+    document.getElementById('modalValStatus').textContent = item.status || 'Tercatat dalam inventarisasi daerah';
+    document.getElementById('modalValSource').textContent = item.sumber || 'Bidang Kebudayaan Situbondo';
+    document.getElementById('modalValExtra').textContent = item.detail_tambahan || '-';
+
+    var modal = document.getElementById('detailModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    var modal = document.getElementById('detailModal');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function copyItemSummary() {
+    if (!State.selectedItem) return;
+    var it = State.selectedItem;
+    var text = it.nama + ' (' + (it.kategori || '-') + ' - ' + (it.jenis || '-') + ')\n' +
+      'Lokasi: ' + (it.lokasi || '-') + (it.kecamatan ? ' (Kec. ' + it.kecamatan + ')' : '') + '\n' +
+      (it.tahun ? 'Tahun: ' + it.tahun + '\n' : '') +
+      'Status: ' + (it.status || '-') + '\n' +
+      'Sumber: ' + (it.sumber || '-') + '\n\n' +
+      'Uraian:\n' + it.deskripsi;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() {
+        showToast('Informasi warisan budaya berhasil disalin');
+      });
+    } else {
+      showToast('Teks berhasil disiapkan');
+    }
+  }
+
+  function showToast(msg) {
+    var toast = document.getElementById('toastPill');
+    var toastMsg = document.getElementById('toastMsg');
+    if (!toast) return;
+
+    if (toastMsg) toastMsg.textContent = msg;
+    toast.classList.add('visible');
+
+    setTimeout(function() {
+      toast.classList.remove('visible');
+    }, 2400);
+  }
+
+  function resetFilters() {
+    State.searchQuery = '';
+    State.activeCategory = 'Semua';
+    State.activeKecamatan = 'Semua';
+    
+    var searchInput = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClearBtn');
+    var kecSelect = document.getElementById('kecamatanSelect');
+
+    if (searchInput) searchInput.value = '';
+    if (clearBtn) clearBtn.style.display = 'none';
+    if (kecSelect) kecSelect.value = 'Semua';
+
+    var categoryBtns = document.querySelectorAll('.cat-tab-btn');
+    categoryBtns.forEach(function(b) {
+      if (b.getAttribute('data-category') === 'Semua') {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    applyFilterAndRender();
+  }
+
+  function updateResultCount() {
+    var countEl = document.getElementById('resultCount');
+    if (countEl) {
+      var kecStr = State.activeKecamatan !== 'Semua' ? ' di Kec. ' + State.activeKecamatan : '';
+      countEl.textContent = 'Menampilkan ' + State.filteredItems.length + ' dari ' + State.items.length + ' warisan' + kecStr;
+    }
+  }
+
+  function updateMetrics() {
+    var totalCount = State.items.length;
+    var cagarCount = State.items.filter(function(i) { return (i.kategori || '').toLowerCase().indexOf('cagar') !== -1; }).length;
+    var seniTradisiCount = State.items.filter(function(i) {
+      var k = (i.kategori || '').toLowerCase();
+      return k.indexOf('seni') !== -1 || k.indexOf('tradisi') !== -1;
+    }).length;
+    var kecCount = State.kecamatanList.length || 17;
+
+    var heroTotal = document.getElementById('heroStatTotal');
+    var heroCagar = document.getElementById('heroStatCagar');
+    var heroSeni = document.getElementById('heroStatSeni');
+    var heroKec = document.getElementById('heroStatKecamatan');
+
+    if (heroTotal) heroTotal.textContent = totalCount;
+    if (heroCagar) heroCagar.textContent = cagarCount;
+    if (heroSeni) heroSeni.textContent = seniTradisiCount;
+    if (heroKec) heroKec.textContent = kecCount;
+  }
+
+  function getCategoryClass(kategori) {
+    if (!kategori) return 'cat-cagar-budaya';
+    var k = kategori.toLowerCase();
+    if (k.indexOf('cagar') !== -1) return 'cat-cagar-budaya';
+    if (k.indexOf('seni') !== -1) return 'cat-kesenian';
+    if (k.indexOf('tradisi') !== -1) return 'cat-tradisi';
+    if (k.indexOf('sejarah') !== -1) return 'cat-sejarah';
+    return 'cat-cagar-budaya';
+  }
+
+  function getCategorySvg(kategori) {
+    if (!kategori) return SVG_ICONS.cagarBudaya;
+    var k = kategori.toLowerCase();
+    if (k.indexOf('cagar') !== -1) return SVG_ICONS.cagarBudaya;
+    if (k.indexOf('seni') !== -1) return SVG_ICONS.kesenian;
+    if (k.indexOf('tradisi') !== -1) return SVG_ICONS.tradisi;
+    if (k.indexOf('sejarah') !== -1) return SVG_ICONS.sejarah;
+    return SVG_ICONS.cagarBudaya;
+  }
+
+  function getMotifPatternSvg() {
+    return '<svg class="motif-svg-pattern" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">' +
+      '<defs>' +
+        '<pattern id="heritageBatik" width="20" height="20" patternUnits="userSpaceOnUse">' +
+          '<circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>' +
+          '<path d="M0 10 Q5 5 10 0 Q15 5 20 10 Q15 15 10 20 Q5 15 0 10 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>' +
+          '<circle cx="10" cy="10" r="1" fill="currentColor"/>' +
+        '</pattern>' +
+      '</defs>' +
+      '<rect width="100" height="100" fill="url(#heritageBatik)"/>' +
+    '</svg>' +
+    '<div class="motif-emblem-center">' + SVG_ICONS.cagarBudaya + '</div>';
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+</script>
+
+</body>
+</html>

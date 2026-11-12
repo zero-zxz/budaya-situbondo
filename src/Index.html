@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title><?= appTitle ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="<?= appSubtitle ?>">
+  
+  <!-- Font Tipografi Premium Warisan Budaya -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <?!= include('Styles'); ?>
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-group" onclick="switchView('katalog'); return false;">
+        <!-- Logo Resmi Kabupaten Situbondo -->
+        <div class="brand-logo-frame">
+          <img src="data/foto/logo-situbondo.png" class="brand-logo-img" alt="Logo Kabupaten Situbondo" />
+        </div>
+        <div>
+          <div class="brand-title">Warisan Budaya Situbondo</div>
+          <div class="brand-sub">Bumi Sholawat Nariyah &bull; Kota Santri Pancasila</div>
+        </div>
+      </a>
+
+      <!-- Menu Pilihan Tampilan Utama -->
+      <nav class="nav-view-switcher" role="tablist" aria-label="Menu Navigasi">
+        <button class="view-tab-btn active" data-view="katalog" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+          </svg>
+          <span>Katalog Warisan</span>
+        </button>
+
+        <button class="view-tab-btn" data-view="sejarah" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5" cy="5" r="2.5"/>
+            <circle cx="15" cy="10" r="2.5"/>
+            <circle cx="5" cy="15" r="2.5"/>
+            <path d="M5 7.5v5M7.5 5h3.5l4 2.5M7.5 15h3.5l4-2.5"/>
+          </svg>
+          <span>Linimasa Sejarah</span>
+        </button>
+
+        <button class="view-tab-btn" data-view="pandalungan" type="button">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+          </svg>
+          <span>Jelajahi 17 Kecamatan</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section yang Ramah & Menghargai Warga Situbondo -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-kicker-badge">
+        <svg viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0L9.8 6.2L16 8L9.8 9.8L8 16L6.2 9.8L0 8L6.2 6.2L8 0Z"/>
+        </svg>
+        <span>Salam Dhulur Situbondo</span>
+      </div>
+
+      <h1 class="hero-title">
+        Warisan Luhur & Cerita Sejarah <span class="hero-title-accent">Bumi Situbondo</span>
+      </h1>
+
+      <p class="hero-desc">
+        Mulai dari ujung barat Besuki sampai ujung timur Banyuputih, mari bersama kita kenali, jaga, dan rawat
+        cagar budaya, kesenian khas, adat tradisi, serta sejarah perjuangan para pahlawan dan leluhur di 17 kecamatan tercinta kita.
+      </p>
+
+      <!-- Panel Ringkasan Metrik (4 Kolom) -->
+      <div class="hero-metrics-grid">
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatTotal">43</div>
+            <div class="metric-label">Objek Terdata</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatCagar">21</div>
+            <div class="metric-label">Cagar Budaya</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('katalog')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatSeni">16</div>
+            <div class="metric-label">Seni & Tradisi</div>
+          </div>
+        </div>
+
+        <div class="hero-metric-card" onclick="switchView('pandalungan')">
+          <div class="metric-icon-wrap">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-num" id="heroStatKecamatan">17</div>
+            <div class="metric-label">Kecamatan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Konsol Pencarian & Filter Navigasi Kategori -->
+      <div class="controls-console">
+        <div class="search-dock-row">
+          <div class="search-dock">
+            <span class="search-icon-prefix">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="9" r="6"/>
+                <path d="M13.5 13.5L18 18"/>
+              </svg>
+            </span>
+            <input 
+              type="search" 
+              id="searchInput" 
+              class="search-input-field" 
+              placeholder="Cari nama warisan, desa, tarian, atau kata kunci..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button class="search-clear-btn" id="searchClearBtn" type="button" aria-label="Bersihkan pencarian">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="15" y1="5" x2="5" y2="15"/>
+                <line x1="5" y1="5" x2="15" y2="15"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Dropdown Kecamatan Situbondo -->
+          <div class="kecamatan-select-wrap">
+            <select id="kecamatanSelect" class="kecamatan-select" aria-label="Pilih Kecamatan di Situbondo">
+              <option value="Semua">Semua Kecamatan (17 Wilayah)</option>
+            </select>
+            <div class="kecamatan-select-arrow">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6l4 4 4-4"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-nav-tabs" role="tablist" aria-label="Pilihan Kategori Warisan">
+          <button class="cat-tab-btn active" data-category="Semua" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+              <rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/>
+            </svg>
+            <span>Semua Kategori</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Cagar Budaya" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/>
+            </svg>
+            <span>Cagar Budaya</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Kesenian" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/>
+            </svg>
+            <span>Kesenian</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Tradisi" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 2.5c2 2.5 4 4.5 4 7a4 4 0 01-8 0c0-2.5 2-4.5 4-7zM7 14.5l-2 3M13 14.5l2 3M10 14.5v3"/>
+            </svg>
+            <span>Tradisi & Adat</span>
+          </button>
+
+          <button class="cat-tab-btn" data-category="Sejarah" type="button">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 3.5h8a2.5 2.5 0 012.5 2.5v9a2.5 2.5 0 01-2.5 2.5H5a2 2 0 01-2-2V5.5A2 2 0 015 3.5h1zM6 7.5h8M6 11.5h5"/>
+            </svg>
+            <span>Sejarah & Kriya</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konten Dinamis -->
+  <main class="main-content">
+
+    <!-- VIEW 1: KATALOG WARISAN BUDAYA -->
+    <div id="katalogView">
+      <div class="content-header-row">
+        <div class="catalog-heading-wrap">
+          <h2>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            Daftar Warisan Budaya di 17 Kecamatan
+          </h2>
+        </div>
+        <div class="catalog-count-badge" id="resultCount">Menghimpun data warisan...</div>
+      </div>
+
+      <!-- Grid Kartu Budaya -->
+      <div class="culture-grid" id="cultureGrid"></div>
+
+      <!-- State Kosong -->
+      <div class="empty-search-state" id="emptySearchState" style="display: none;">
+        <div class="empty-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+        <h3 class="empty-title">Belum ada data warisan yang sesuai</h3>
+        <p class="empty-desc">
+          Coba cari nama desa lain atau kembalikan pilihan ke semua kecamatan dan semua kategori.
+        </p>
+        <button class="btn-reset-search" onclick="resetFilters()" type="button">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 8a5.5 5.5 0 101.6-3.9L2 6M2 2v4h4"/>
+          </svg>
+          <span>Kembalikan Semua Pilihan</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEW 2: LINIMASA SEJARAH SITUBONDO -->
+    <div id="timelineView" class="timeline-section">
+      <div class="timeline-intro-box">
+        <h2 class="timeline-intro-title">Kronik Sejarah Kabupaten Situbondo</h2>
+        <p class="timeline-intro-lead">
+          Rekonstruksi kronologis perjalanan peradaban Situbondo yang disusun berdasarkan naskah kuno nusantara,
+          arsip kolonial Hindia Belanda (Karesidenan Besuki), arsip nasional Republik Indonesia, hingga regulasi resmi penetapan daerah.
+        </p>
+        <div class="timeline-sources-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/>
+          </svg>
+          <span>Disusun dari: Kitab Nagarakretagama, Suma Oriental Tomé Pires, Babad Besuki, Regeeringsalmanak, & Lembaran Negara PP 28/1972</span>
+        </div>
+      </div>
+
+      <div class="timeline-tree" id="timelineTreeContainer"></div>
+    </div>
+
+    <!-- VIEW 3: KILAS PANDALUNGAN & 17 KECAMATAN -->
+    <div id="pandalunganView" class="pandalungan-section">
+      <div class="pandalungan-banner">
+        <h2 class="pandalungan-banner-title">Guyub Rukun Budaya <span>Pandalungan</span> Situbondo</h2>
+        <p class="pandalungan-banner-desc">
+          Masyarakat Situbondo hidup berdampingan secara harmonis dalam kebudayaan <strong>Pandalungan</strong>:
+          asimilasi kultural yang hangat antara tradisi Madura dan pesisir Jawa. Berpadu erat dengan nilai religius pondok pesantren
+          yang melahirkan julukan kebanggaan <strong>Kota Santri Pancasila</strong> dan <strong>Bumi Sholawat Nariyah</strong>.
+        </p>
+      </div>
+
+      <div class="content-header-row">
+        <div class="catalog-heading-wrap">
+          <h2>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/>
+            </svg>
+            Jelajahi Warisan di 17 Kecamatan Situbondo
+          </h2>
+        </div>
+      </div>
+
+      <div class="kecamatan-grid-cards" id="kecamatanGridCards"></div>
+    </div>
+
+  </main>
+
+  <!-- Modal Detail Komprehensif -->
+  <div class="modal-backdrop" id="detailModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-banner-area">
+        <img class="modal-banner-img" id="modalBannerImg" src="" alt="Foto Warisan" style="display: none;" />
+        <div class="card-media-motif" id="modalBannerMotif" style="display: none;">
+          <svg class="motif-svg-pattern" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs>
+              <pattern id="modalHeritageBatik" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>
+                <path d="M0 10 Q5 5 10 0 Q15 5 20 10 Q15 15 10 20 Q5 15 0 10 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+                <circle cx="10" cy="10" r="1" fill="currentColor"/>
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#modalHeritageBatik)"/>
+          </svg>
+          <div class="motif-emblem-center">
+            <svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/></svg>
+          </div>
+        </div>
+        <div class="modal-banner-overlay"></div>
+        <button class="modal-dismiss-btn" id="modalCloseBtn" type="button" aria-label="Tutup jendela rincian">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="15" y1="5" x2="5" y2="15"/>
+            <line x1="5" y1="5" x2="15" y2="15"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-content-body">
+        <div class="modal-meta-top">
+          <span class="badge-category-pill cat-cagar-budaya" id="modalCategoryBadge">-</span>
+          <div id="modalSorotanWrap"></div>
+        </div>
+
+        <h2 class="modal-title-text" id="modalTitle">Detail Warisan Budaya</h2>
+
+        <div class="modal-section-title">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h12a1 1 0 011 1v8a1 1 0 01-1 1H2a1 1 0 01-1-1V4a1 1 0 011-1zM4 6h8M4 9h5"/>
+          </svg>
+          <span>Uraian & Riwayat</span>
+        </div>
+        <p class="modal-narrative-text" id="modalNarrative">-</p>
+
+        <table class="modal-data-table">
+          <tbody>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.76-2.24-5-5-5z"/>
+                  <circle cx="8" cy="6.5" r="1.75"/>
+                </svg>
+                <span>Lokasi & Kecamatan</span>
+              </td>
+              <td id="modalValLocation">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1.5 8.5L7.5 2.5H13.5V8.5L7.5 14.5L1.5 8.5Z"/>
+                  <circle cx="10" cy="5" r="1"/>
+                </svg>
+                <span>Klasifikasi</span>
+              </td>
+              <td id="modalValType">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="12" height="11" rx="2"/>
+                  <path d="M2 6.5h12M5 1.5v3M11 1.5v3"/>
+                </svg>
+                <span>Tahun / Periode</span>
+              </td>
+              <td id="modalValYear">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 1.5l5 2.25v4.25c0 3.5-2.5 6-5 6.75-2.5-.75-5-3.25-5-6.75V3.75L8 1.5z"/>
+                  <path d="M6 7.5l1.5 1.5 3-3"/>
+                </svg>
+                <span>Status Inventaris</span>
+              </td>
+              <td id="modalValStatus">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/>
+                  <path d="M5 6.5h6M5 9.5h4"/>
+                </svg>
+                <span>Sumber Data</span>
+              </td>
+              <td id="modalValSource">-</td>
+            </tr>
+            <tr>
+              <td>
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="8" r="6.5"/>
+                  <path d="M8 7.5v4M8 4.75v.5"/>
+                </svg>
+                <span>Info Tambahan</span>
+              </td>
+              <td id="modalValExtra">-</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="modal-actions-bar">
+          <button class="btn-modal-copy" id="btnCopyModal" type="button">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/>
+              <path d="M3.5 10.5h-1a1 1 0 01-1-1v-6a1 1 0 011-1h6a1 1 0 011 1v1"/>
+            </svg>
+            <span>Salin Ringkasan</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notifikasi Toast -->
+  <div class="toast-pill" id="toastPill" role="status" aria-live="polite">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 8.5l3.5 3.5 6.5-7.5"/>
+    </svg>
+    <span id="toastMsg">Informasi warisan budaya berhasil disalin</span>
+  </div>
+
+  <!-- Footer dengan Logo Kabupaten Situbondo -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-logo-frame" style="width: 38px; height: 38px;">
+          <img src="data/foto/logo-situbondo.png" class="brand-logo-img" alt="Logo Kabupaten Situbondo" />
+        </div>
+        <div>
+          <div style="font-weight: 700; color: #ffffff;">Pemerintah Kabupaten Situbondo</div>
+          <div class="footer-colophon">Platform Terbuka Inventarisasi Sejarah & Kebudayaan 17 Kecamatan</div>
+        </div>
+      </div>
+
+      <div class="footer-colophon">
+        Bebas Lisensi &copy; 2026. Didukung oleh Google Apps Script & Google Sheets.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Server-Side Data Injection -->
+  <script>
+    window.INITIAL_DATA = JSON.parse(<?= initialItemsJson ?>);
+    window.INITIAL_TIMELINE = JSON.parse(<?= initialTimelineJson ?>);
+    window.INITIAL_KECAMATAN = JSON.parse(<?= initialKecamatanJson ?>);
+  </script>
+
+  <?!= include('Scripts'); ?>
+</body>
+</html>

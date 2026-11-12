@@ -1,0 +1,535 @@
+<script>
+  /**
+   * ============================================================
+   * Web Kebudayaan Situbondo - Client Logic & SVG Engine (Scripts.html)
+   * 100% Vector SVG | Zero Emoji | Ramah Masyarakat Situbondo
+   * ============================================================
+   */
+
+  var SVG_ICONS = {
+    search: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L18 18"/></svg>',
+    clear: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><line x1="15" y1="5" x2="5" y2="15"/><line x1="5" y1="5" x2="15" y2="15"/></svg>',
+    grid: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><rect x="3" y="3" width="5.5" height="5.5" rx="1.2"/><rect x="11.5" y="3" width="5.5" height="5.5" rx="1.2"/><rect x="3" y="11.5" width="5.5" height="5.5" rx="1.2"/><rect x="11.5" y="11.5" width="5.5" height="5.5" rx="1.2"/></svg>',
+    cagarBudaya: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M2.5 17.5H17.5M4 17.5V11M16 17.5V11M7.5 17.5V9.5M12.5 17.5V9.5M3 11H17M10 2.5L4 7.5V11H16V7.5L10 2.5Z"/></svg>',
+    kesenian: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M7.5 15.5A2.5 2.5 0 105 13v-8l10-2v8a2.5 2.5 0 10-2.5-2.5V5.5L7.5 7.5v8z"/></svg>',
+    tradisi: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M10 2.5c2 2.5 4 4.5 4 7a4 4 0 01-8 0c0-2.5 2-4.5 4-7zM7 14.5l-2 3M13 14.5l2 3M10 14.5v3"/></svg>',
+    sejarah: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M6 3.5h8a2.5 2.5 0 012.5 2.5v9a2.5 2.5 0 01-2.5 2.5H5a2 2 0 01-2-2V5.5A2 2 0 015 3.5h1zM6 7.5h8M6 11.5h5"/></svg>',
+    pin: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M8 1.5C5.24 1.5 3 3.74 3 6.5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="6.5" r="1.75"/></svg>',
+    calendar: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 6.5h12M5 1.5v3M11 1.5v3"/></svg>',
+    star: '<svg class="icon-svg" viewBox="0 0 16 16"><path d="M8 1.25l2.12 4.3 4.75.69-3.44 3.35.81 4.73L8 12.08 3.76 14.32l.81-4.73L1.13 6.24l4.75-.69L8 1.25z"/></svg>',
+    arrow: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>',
+    shield: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M8 1.5l5 2.25v4.25c0 3.5-2.5 6-5 6.75-2.5-.75-5-3.25-5-6.75V3.75L8 1.5z"/><path d="M6 7.5l1.5 1.5 3-3"/></svg>',
+    archive: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 2.5h10a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5H3A1.5 1.5 0 011.5 13V4A1.5 1.5 0 013 2.5z"/><path d="M5 6.5h6M5 9.5h4"/></svg>',
+    info: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 7.5v4M8 4.75v.5"/></svg>',
+    tag: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M1.5 8.5L7.5 2.5H13.5V8.5L7.5 14.5L1.5 8.5Z"/><circle cx="10" cy="5" r="1"/></svg>',
+    copy: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M3.5 10.5h-1a1 1 0 01-1-1v-6a1 1 0 011-1h6a1 1 0 011 1v1"/></svg>',
+    check: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5 6.5-7.5"/></svg>',
+    reset: '<svg class="icon-svg-stroke" viewBox="0 0 16 16"><path d="M2.5 8a5.5 5.5 0 101.6-3.9L2 6M2 2v4h4"/></svg>',
+    timeline: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><circle cx="5" cy="5" r="2.5"/><circle cx="15" cy="10" r="2.5"/><circle cx="5" cy="15" r="2.5"/><path d="M5 7.5v5M7.5 5h3.5l4 2.5M7.5 15h3.5l4-2.5"/></svg>',
+    community: '<svg class="icon-svg-stroke" viewBox="0 0 20 20"><path d="M10 10a3 3 0 100-6 3 3 0 000 6zM3 17v-1a4 4 0 014-4h6a4 4 0 014 4v1"/></svg>'
+  };
+
+  var State = {
+    items: [],
+    timeline: [],
+    kecamatanList: [],
+    filteredItems: [],
+    activeCategory: 'Semua',
+    activeKecamatan: 'Semua',
+    searchQuery: '',
+    currentView: 'katalog',
+    selectedItem: null
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initApp();
+  });
+
+  function initApp() {
+    // 1. Inisialisasi Data dari Window Injection
+    if (window.INITIAL_DATA && Array.isArray(window.INITIAL_DATA)) {
+      State.items = window.INITIAL_DATA;
+    }
+    if (window.INITIAL_TIMELINE && Array.isArray(window.INITIAL_TIMELINE)) {
+      State.timeline = window.INITIAL_TIMELINE;
+    }
+    if (window.INITIAL_KECAMATAN && Array.isArray(window.INITIAL_KECAMATAN)) {
+      State.kecamatanList = window.INITIAL_KECAMATAN;
+    }
+
+    // 2. Populasi Dropdown Kecamatan
+    populateKecamatanSelect();
+
+    // 3. Render Awal
+    applyFilterAndRender();
+    renderTimeline();
+    renderPandalunganGrid();
+    updateMetrics();
+
+    // 4. Setup Event Listeners
+    setupEventListeners();
+  }
+
+  function populateKecamatanSelect() {
+    var select = document.getElementById('kecamatanSelect');
+    if (!select || !State.kecamatanList.length) return;
+
+    // Bersihkan opsi lama selain opsi pertama
+    select.innerHTML = '<option value="Semua">Semua Kecamatan (17 Wilayah)</option>';
+    State.kecamatanList.forEach(function(kec) {
+      var opt = document.createElement('option');
+      opt.value = kec;
+      opt.textContent = 'Kecamatan ' + kec;
+      select.appendChild(opt);
+    });
+  }
+
+  function setupEventListeners() {
+    // Nav View Switcher (Katalog, Linimasa Sejarah, Pandalungan)
+    var viewBtns = document.querySelectorAll('.view-tab-btn');
+    viewBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var viewName = this.getAttribute('data-view');
+        switchView(viewName);
+      });
+    });
+
+    // Input Pencarian
+    var searchInput = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClearBtn');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        State.searchQuery = e.target.value.trim().toLowerCase();
+        if (clearBtn) {
+          clearBtn.style.display = State.searchQuery ? 'flex' : 'none';
+        }
+        applyFilterAndRender();
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (searchInput) {
+          searchInput.value = '';
+          searchInput.focus();
+        }
+        clearBtn.style.display = 'none';
+        State.searchQuery = '';
+        applyFilterAndRender();
+      });
+    }
+
+    // Dropdown Kecamatan
+    var kecSelect = document.getElementById('kecamatanSelect');
+    if (kecSelect) {
+      kecSelect.addEventListener('change', function(e) {
+        State.activeKecamatan = e.target.value;
+        applyFilterAndRender();
+      });
+    }
+
+    // Tombol Kategori
+    var categoryBtns = document.querySelectorAll('.cat-tab-btn');
+    categoryBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        categoryBtns.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        State.activeCategory = this.getAttribute('data-category');
+        applyFilterAndRender();
+      });
+    });
+
+    // Modal
+    var modalBackdrop = document.getElementById('detailModal');
+    var closeBtn = document.getElementById('modalCloseBtn');
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', function(e) {
+        if (e.target === modalBackdrop) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    var copyBtn = document.getElementById('btnCopyModal');
+    if (copyBtn) copyBtn.addEventListener('click', copyItemSummary);
+  }
+
+  function switchView(viewName) {
+    State.currentView = viewName;
+
+    // Update active tab button
+    var viewBtns = document.querySelectorAll('.view-tab-btn');
+    viewBtns.forEach(function(btn) {
+      if (btn.getAttribute('data-view') === viewName) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Show/hide view sections
+    var katalogView = document.getElementById('katalogView');
+    var timelineView = document.getElementById('timelineView');
+    var pandalunganView = document.getElementById('pandalunganView');
+
+    if (katalogView) katalogView.style.display = (viewName === 'katalog') ? 'block' : 'none';
+    if (timelineView) timelineView.style.display = (viewName === 'sejarah') ? 'block' : 'none';
+    if (pandalunganView) pandalunganView.style.display = (viewName === 'pandalungan') ? 'block' : 'none';
+
+    // Scroll smoothly to content top
+    var mainEl = document.querySelector('.main-content');
+    if (mainEl) {
+      mainEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function filterByKecamatan(kecName) {
+    State.activeKecamatan = kecName;
+    var select = document.getElementById('kecamatanSelect');
+    if (select) select.value = kecName;
+    switchView('katalog');
+    applyFilterAndRender();
+  }
+
+  function applyFilterAndRender() {
+    var q = State.searchQuery;
+    var cat = State.activeCategory;
+    var kec = State.activeKecamatan;
+
+    State.filteredItems = State.items.filter(function(item) {
+      var matchCategory = (cat === 'Semua') || 
+        (item.kategori && item.kategori.toLowerCase() === cat.toLowerCase());
+
+      var matchKecamatan = (kec === 'Semua') || 
+        (item.kecamatan && item.kecamatan.toLowerCase() === kec.toLowerCase());
+
+      var matchQuery = !q || (
+        (item.nama && item.nama.toLowerCase().indexOf(q) !== -1) ||
+        (item.lokasi && item.lokasi.toLowerCase().indexOf(q) !== -1) ||
+        (item.kecamatan && item.kecamatan.toLowerCase().indexOf(q) !== -1) ||
+        (item.jenis && item.jenis.toLowerCase().indexOf(q) !== -1) ||
+        (item.deskripsi && item.deskripsi.toLowerCase().indexOf(q) !== -1)
+      );
+
+      return matchCategory && matchKecamatan && matchQuery;
+    });
+
+    renderCards();
+    updateResultCount();
+  }
+
+  function renderCards() {
+    var grid = document.getElementById('cultureGrid');
+    var emptyState = document.getElementById('emptySearchState');
+    if (!grid) return;
+
+    if (State.filteredItems.length === 0) {
+      grid.innerHTML = '';
+      if (emptyState) emptyState.style.display = 'block';
+      return;
+    }
+
+    if (emptyState) emptyState.style.display = 'none';
+
+    var html = '';
+    State.filteredItems.forEach(function(item) {
+      var catClass = getCategoryClass(item.kategori);
+      var catIcon = getCategorySvg(item.kategori);
+      var featuredBadgeHtml = item.unggulan ? 
+        '<span class="badge-sorotan">' + SVG_ICONS.star + ' Sorotan</span>' : '';
+      
+      var yearTagHtml = item.tahun ? 
+        '<span class="card-year-tag">' + SVG_ICONS.calendar + ' ' + escapeHtml(item.tahun) + '</span>' : '';
+
+      var kecBadgeHtml = item.kecamatan ? 
+        '<span class="card-kecamatan-tag">Kec. ' + escapeHtml(item.kecamatan) + '</span>' : '';
+
+      var mediaHtml = '';
+      if (item.foto && item.foto.trim() !== '') {
+        var localSrc = 'data/foto/' + item.foto;
+        var onlineSrc = item.foto_url || '';
+        mediaHtml = '<div class="card-media-banner">' +
+          '<img class="card-media-img" src="' + localSrc + '" alt="' + escapeHtml(item.nama) + '" ' +
+            'onerror="if(this.src.indexOf(\'http\')===-1 && \'' + onlineSrc + '\'){this.src=\'' + onlineSrc + '\';}else{this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';}" loading="lazy"/>' +
+          '<div class="card-media-motif" style="display:none;">' + getMotifPatternSvg() + '</div>' +
+          '<div class="card-media-overlay">' +
+            '<span class="badge-category-pill ' + catClass + '">' + catIcon + ' ' + escapeHtml(item.kategori || 'Cagar Budaya') + '</span>' +
+            featuredBadgeHtml +
+          '</div>' +
+        '</div>';
+      } else {
+        mediaHtml = '<div class="card-media-banner">' +
+          '<div class="card-media-motif">' + getMotifPatternSvg() + '</div>' +
+          '<div class="card-media-overlay">' +
+            '<span class="badge-category-pill ' + catClass + '">' + catIcon + ' ' + escapeHtml(item.kategori || 'Cagar Budaya') + '</span>' +
+            featuredBadgeHtml +
+          '</div>' +
+        '</div>';
+      }
+
+      html += '<div class="culture-card" onclick="openDetail(\'' + escapeHtml(item.id) + '\')">' +
+        mediaHtml +
+        '<div class="card-body">' +
+          '<h3 class="card-title">' + escapeHtml(item.nama) + '</h3>' +
+          '<div class="card-location-row">' +
+            SVG_ICONS.pin + ' ' +
+            '<span>' + escapeHtml(item.lokasi || 'Situbondo') + '</span>' +
+            kecBadgeHtml +
+            yearTagHtml +
+          '</div>' +
+          '<p class="card-snippet">' + escapeHtml(item.deskripsi || '') + '</p>' +
+        '</div>' +
+        '<div class="card-footer">' +
+          '<span class="card-type-label">' + SVG_ICONS.tag + ' ' + escapeHtml(item.jenis || 'Inventaris') + '</span>' +
+          '<button class="btn-card-action" type="button">Lihat Rincian ' + SVG_ICONS.arrow + '</button>' +
+        '</div>' +
+      '</div>';
+    });
+
+    grid.innerHTML = html;
+  }
+
+  function renderTimeline() {
+    var container = document.getElementById('timelineTreeContainer');
+    if (!container || !State.timeline.length) return;
+
+    var html = '';
+    State.timeline.forEach(function(item) {
+      html += '<div class="timeline-node-card">' +
+        '<div class="timeline-dot"><div class="timeline-dot-inner"></div></div>' +
+        '<div class="timeline-meta-bar">' +
+          '<span class="timeline-era-chip">' + escapeHtml(item.era || 'Kronik Sejarah') + '</span>' +
+          '<div class="timeline-year-text">' + SVG_ICONS.calendar + ' ' + escapeHtml(item.tahun || '-') + '</div>' +
+        '</div>' +
+        '<h3 class="timeline-node-title">' + escapeHtml(item.judul) + '</h3>' +
+        '<p class="timeline-node-lead">' + escapeHtml(item.ringkasan) + '</p>' +
+        '<p class="timeline-node-body">' + escapeHtml(item.uraian) + '</p>' +
+        '<div class="timeline-footer-row">' +
+          '<div class="timeline-src-text">' + SVG_ICONS.archive + ' <strong>Rujukan:</strong> ' + escapeHtml(item.sumber) + '</div>' +
+          '<div>' + SVG_ICONS.pin + ' ' + escapeHtml(item.lokasi || 'Kabupaten Situbondo') + '</div>' +
+        '</div>' +
+      '</div>';
+    });
+
+    container.innerHTML = html;
+  }
+
+  function renderPandalunganGrid() {
+    var grid = document.getElementById('kecamatanGridCards');
+    if (!grid || !State.kecamatanList.length) return;
+
+    var html = '';
+    State.kecamatanList.forEach(function(kec) {
+      var count = State.items.filter(function(i) {
+        return (i.kecamatan || '').toLowerCase() === kec.toLowerCase();
+      }).length;
+
+      html += '<div class="kecamatan-info-card" onclick="filterByKecamatan(\'' + escapeHtml(kec) + '\')">' +
+        '<div class="kecamatan-card-top">' +
+          '<h4 class="kecamatan-card-name">' + escapeHtml(kec) + '</h4>' +
+          '<span class="kecamatan-card-count">' + count + ' Warisan</span>' +
+        '</div>' +
+        '<p class="kecamatan-card-desc">Jelajahi cagar budaya, tradisi, dan kesenian di Kecamatan ' + escapeHtml(kec) + ' &rarr;</p>' +
+      '</div>';
+    });
+
+    grid.innerHTML = html;
+  }
+
+  function openDetail(id) {
+    var item = State.items.find(function(it) { return it.id === id; });
+    if (!item) return;
+
+    State.selectedItem = item;
+
+    var modalImg = document.getElementById('modalBannerImg');
+    var modalMotif = document.getElementById('modalBannerMotif');
+    
+    if (item.foto && item.foto.trim() !== '') {
+      var localSrc = 'data/foto/' + item.foto;
+      var onlineSrc = item.foto_url || '';
+      modalImg.src = localSrc;
+      modalImg.style.display = 'block';
+      modalImg.onerror = function() {
+        if (onlineSrc && this.src.indexOf('http') === -1) {
+          this.src = onlineSrc;
+        } else {
+          this.style.display = 'none';
+          modalMotif.style.display = 'flex';
+        }
+      };
+      modalMotif.style.display = 'none';
+    } else {
+      modalImg.style.display = 'none';
+      modalMotif.style.display = 'flex';
+    }
+
+    var catBadge = document.getElementById('modalCategoryBadge');
+    catBadge.className = 'badge-category-pill ' + getCategoryClass(item.kategori);
+    catBadge.innerHTML = getCategorySvg(item.kategori) + ' ' + escapeHtml(item.kategori || '-');
+
+    var sorotanWrap = document.getElementById('modalSorotanWrap');
+    if (sorotanWrap) {
+      sorotanWrap.innerHTML = item.unggulan ? 
+        '<span class="badge-sorotan">' + SVG_ICONS.star + ' Sorotan Utama</span>' : '';
+    }
+
+    document.getElementById('modalTitle').textContent = item.nama;
+    document.getElementById('modalNarrative').textContent = item.deskripsi || 'Belum ada uraian rincian.';
+    
+    document.getElementById('modalValLocation').textContent = (item.lokasi || '-') + (item.kecamatan ? ' (Kec. ' + item.kecamatan + ')' : '');
+    document.getElementById('modalValType').textContent = item.jenis || '-';
+    document.getElementById('modalValYear').textContent = item.tahun || 'Tidak tercatat';
+    document.getElementById('modalValStatus').textContent = item.status || 'Tercatat dalam inventarisasi daerah';
+    document.getElementById('modalValSource').textContent = item.sumber || 'Bidang Kebudayaan Situbondo';
+    document.getElementById('modalValExtra').textContent = item.detail_tambahan || '-';
+
+    var modal = document.getElementById('detailModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    var modal = document.getElementById('detailModal');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function copyItemSummary() {
+    if (!State.selectedItem) return;
+    var it = State.selectedItem;
+    var text = it.nama + ' (' + (it.kategori || '-') + ' - ' + (it.jenis || '-') + ')\n' +
+      'Lokasi: ' + (it.lokasi || '-') + (it.kecamatan ? ' (Kec. ' + it.kecamatan + ')' : '') + '\n' +
+      (it.tahun ? 'Tahun: ' + it.tahun + '\n' : '') +
+      'Status: ' + (it.status || '-') + '\n' +
+      'Sumber: ' + (it.sumber || '-') + '\n\n' +
+      'Uraian:\n' + it.deskripsi;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function() {
+        showToast('Informasi warisan budaya berhasil disalin');
+      });
+    } else {
+      showToast('Teks berhasil disiapkan');
+    }
+  }
+
+  function showToast(msg) {
+    var toast = document.getElementById('toastPill');
+    var toastMsg = document.getElementById('toastMsg');
+    if (!toast) return;
+
+    if (toastMsg) toastMsg.textContent = msg;
+    toast.classList.add('visible');
+
+    setTimeout(function() {
+      toast.classList.remove('visible');
+    }, 2400);
+  }
+
+  function resetFilters() {
+    State.searchQuery = '';
+    State.activeCategory = 'Semua';
+    State.activeKecamatan = 'Semua';
+    
+    var searchInput = document.getElementById('searchInput');
+    var clearBtn = document.getElementById('searchClearBtn');
+    var kecSelect = document.getElementById('kecamatanSelect');
+
+    if (searchInput) searchInput.value = '';
+    if (clearBtn) clearBtn.style.display = 'none';
+    if (kecSelect) kecSelect.value = 'Semua';
+
+    var categoryBtns = document.querySelectorAll('.cat-tab-btn');
+    categoryBtns.forEach(function(b) {
+      if (b.getAttribute('data-category') === 'Semua') {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    applyFilterAndRender();
+  }
+
+  function updateResultCount() {
+    var countEl = document.getElementById('resultCount');
+    if (countEl) {
+      var kecStr = State.activeKecamatan !== 'Semua' ? ' di Kec. ' + State.activeKecamatan : '';
+      countEl.textContent = 'Menampilkan ' + State.filteredItems.length + ' dari ' + State.items.length + ' warisan' + kecStr;
+    }
+  }
+
+  function updateMetrics() {
+    var totalCount = State.items.length;
+    var cagarCount = State.items.filter(function(i) { return (i.kategori || '').toLowerCase().indexOf('cagar') !== -1; }).length;
+    var seniTradisiCount = State.items.filter(function(i) {
+      var k = (i.kategori || '').toLowerCase();
+      return k.indexOf('seni') !== -1 || k.indexOf('tradisi') !== -1;
+    }).length;
+    var kecCount = State.kecamatanList.length || 17;
+
+    var heroTotal = document.getElementById('heroStatTotal');
+    var heroCagar = document.getElementById('heroStatCagar');
+    var heroSeni = document.getElementById('heroStatSeni');
+    var heroKec = document.getElementById('heroStatKecamatan');
+
+    if (heroTotal) heroTotal.textContent = totalCount;
+    if (heroCagar) heroCagar.textContent = cagarCount;
+    if (heroSeni) heroSeni.textContent = seniTradisiCount;
+    if (heroKec) heroKec.textContent = kecCount;
+  }
+
+  function getCategoryClass(kategori) {
+    if (!kategori) return 'cat-cagar-budaya';
+    var k = kategori.toLowerCase();
+    if (k.indexOf('cagar') !== -1) return 'cat-cagar-budaya';
+    if (k.indexOf('seni') !== -1) return 'cat-kesenian';
+    if (k.indexOf('tradisi') !== -1) return 'cat-tradisi';
+    if (k.indexOf('sejarah') !== -1) return 'cat-sejarah';
+    return 'cat-cagar-budaya';
+  }
+
+  function getCategorySvg(kategori) {
+    if (!kategori) return SVG_ICONS.cagarBudaya;
+    var k = kategori.toLowerCase();
+    if (k.indexOf('cagar') !== -1) return SVG_ICONS.cagarBudaya;
+    if (k.indexOf('seni') !== -1) return SVG_ICONS.kesenian;
+    if (k.indexOf('tradisi') !== -1) return SVG_ICONS.tradisi;
+    if (k.indexOf('sejarah') !== -1) return SVG_ICONS.sejarah;
+    return SVG_ICONS.cagarBudaya;
+  }
+
+  function getMotifPatternSvg() {
+    return '<svg class="motif-svg-pattern" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">' +
+      '<defs>' +
+        '<pattern id="heritageBatik" width="20" height="20" patternUnits="userSpaceOnUse">' +
+          '<circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>' +
+          '<path d="M0 10 Q5 5 10 0 Q15 5 20 10 Q15 15 10 20 Q5 15 0 10 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>' +
+          '<circle cx="10" cy="10" r="1" fill="currentColor"/>' +
+        '</pattern>' +
+      '</defs>' +
+      '<rect width="100" height="100" fill="url(#heritageBatik)"/>' +
+    '</svg>' +
+    '<div class="motif-emblem-center">' + SVG_ICONS.cagarBudaya + '</div>';
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+</script>
